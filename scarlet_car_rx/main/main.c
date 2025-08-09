@@ -1,4 +1,4 @@
-// Project Name: Main Application Code, Scarlet Car Rx 1.0
+// Project Name: Main Application Code, Scarlet Rover Rx 1.0
 // Author: Fayyaz Nisar Shaikh
 // LinkedIn: https://www.linkedin.com/in/fayyaz-shaikh-7646312a3/
 // Email: fayyaz.shaikh7862005@gmail.com
