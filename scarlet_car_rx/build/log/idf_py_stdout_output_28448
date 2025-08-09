@@ -1,0 +1,771 @@
+����      : DIO
+[0;32mI (42) boot�ets Jun  8 2016 00:22:57[0m
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul 31 2025 22:26:06[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v1.0[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=19080h (102528) map[0m
+[0;32mI (124) esp_image: segment 1: paddr=000290a8 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=000290cc vaddr=3ffb0000 size=03ef0h ( 16112) load[0m
+[0;32mI (134) esp_image: segment 3: paddr=0002cfc4 vaddr=40080000 size=03054h ( 12372) load[0m
+[0;32mI (141) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=811ach (528812) map[0m
+[0;32mI (324) esp_image: segment 5: paddr=000b11d4 vaddr=40083054 size=14714h ( 83732) load[0m
+[0;32mI (368) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (368) boot: Disabling RNG early entropy source...[0m
+[0;32mI (379) cpu_start: Multicore app[0m
+[0;32mI (387) cpu_start: Pro cpu start user code[0m
+[0;32mI (387) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (387) app_init: Application information:[0m
+[0;32mI (387) app_init: Project name:     esp_now_rx[0m
+[0;32mI (391) app_init: App version:      1[0m
+[0;32mI (395) app_init: Compile time:     Jul 31 2025 22:25:35[0m
+[0;32mI (400) app_init: ELF file SHA256:  383162d25...[0m
+[0;32mI (404) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (408) efuse_init: Min chip rev:     v0.0[0m
+I (412) efuse_init: Max chip rev:     v3.99 
+[0;32mI (416) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (420) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (426) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (431) heap_init: At 3FFB81E8 len 00027E18 (159 KiB): DRAM[0m
+[0;32mI (436) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (441) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (447) heap_init: At 40097768 len 00008898 (34 KiB): IRAM[0m
+[0;32mI (454) spi_flash: detected chip: generic[0m
+[0;32mI (456) spi_flash: flash io: dio[0m
+[0;33mW (459) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (472) main_task: Started on CPU0[0m
+[0;32mI (482) main_task: Calling app_main()[0m
+[0;32mI (512) wifi:wifi driver task: 3ffbfeb4, prio:23, stack:6656, core=0[0m
+[0;32mI (512) wifi:wifi firmware version: 79fa3f41ba[0m
+[0;32mI (522) wifi:wifi certification version: v7.0[0m
+[0;32mI (522) wifi:config NVS flash: enabled[0m
+[0;32mI (522) wifi:config nano formatting: disabled[0m
+[0;32mI (522) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (532) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (532) wifi:Init management short buffer num: 32[0m
+[0;32mI (532) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (542) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (542) wifi:Init static rx buffer num: 10[0m
+[0;32mI (552) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (552) wifi_init: rx ba win: 6[0m
+[0;32mI (552) wifi_init: accept mbox: 6[0m
+[0;32mI (552) wifi_init: tcpip mbox: 32[0m
+[0;32mI (562) wifi_init: udp mbox: 6[0m
+[0;32mI (562) wifi_init: tcp mbox: 6[0m
+[0;32mI (562) wifi_init: tcp tx win: 5760[0m
+[0;32mI (572) wifi_init: tcp rx win: 5760[0m
+[0;32mI (572) wifi_init: tcp mss: 1440[0m
+[0;32mI (572) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (582) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (582) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (662) wifi:mode : sta (4c:eb:d6:7b:28:5c)[0m
+[0;32mI (662) wifi:enable tsf[0m
+[0;32mI (662) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (662) RX_MODULE: ESP-NOW RX initialized.[0m
+[0;32mI (662) MAIN_RX: Receiver MAC: 4C:EB:D6:7B:28:5C[0m
+0
+[0;32mI (712) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (822) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (932) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (1042) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (1152) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (1262) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+0
+[0;32mI (1372) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (1482) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (1592) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (1702) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (1812) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (1922) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (2032) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (2142) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (2252) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+0
+[0;32mI (2372) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (2472) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (2582) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (2692) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (2802) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (2912) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (3022) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (3132) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (3242) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (3362) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (3462) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+0
+[0;32mI (3572) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (3682) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (3792) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (3902) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (4012) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (4122) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (4232) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (4342) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (4452) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (4562) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+0
+[0;32mI (4672) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (4782) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (4892) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (5002) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (5112) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (5222) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (5332) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (5442) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (5562) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (5662) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+0
+[0;32mI (5772) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (5882) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (5992) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (6102) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (6212) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (6322) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (6432) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (6542) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (6652) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (6762) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+0
+[0;32mI (6872) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (6982) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (7092) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (7202) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (7312) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (7422) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (7532) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (7642) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (7752) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (7862) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+0
+[0;32mI (7972) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (8082) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (8192) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (8302) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (8412) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (8522) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (8632) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (8742) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (8852) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (8962) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+0
+[0;32mI (9072) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (9182) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (9292) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (9402) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (9512) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (9622) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (9732) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (9842) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (9952) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (10062) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+0
+[0;32mI (10172) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (10282) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (10392) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (10502) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (10612) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (10722) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (10832) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (10942) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (11052) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (11162) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+0
+[0;32mI (11272) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (11382) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (11492) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (11602) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (11712) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (11822) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (11932) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (12052) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (12152) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (12262) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+0
+[0;32mI (12372) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (12482) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (12592) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (12702) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (12812) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (12922) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (13032) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (13142) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (13252) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (13362) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+0
+[0;32mI (13482) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (13582) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (13702) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (13802) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (13912) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (14022) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (14132) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (14242) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (14352) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (14462) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+0
+[0;32mI (14572) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (14692) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (14792) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (14902) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (15012) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (15122) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (15232) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (15342) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (15452) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (15562) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+0
+[0;32mI (15672) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (15782) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (15902) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (16002) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (16112) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (16222) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (16332) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (16442) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (16552) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (16662) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+0
+[0;32mI (16772) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (16882) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (16992) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (17102) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (17212) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (17322) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (17432) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (17542) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (17652) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (17762) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+0
+[0;32mI (17872) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (17982) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (18092) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (18202) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (18312) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (18422) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (18532) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (18642) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (18752) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (18862) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+0
+[0;32mI (18972) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (19082) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (19192) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (19302) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (19412) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (19522) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (19632) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (19742) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (19852) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (19962) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+0
+[0;32mI (20072) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (20182) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (20292) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (20412) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (20512) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (20622) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (20732) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (20842) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (20952) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (21062) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+0
+[0;32mI (21172) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (21282) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (21392) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (21502) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (21612) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (21722) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (21832) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (21942) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (22052) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (22162) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+0
+[0;32mI (22272) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (22382) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (22492) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (22602) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (22712) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (22822) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (22932) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (23042) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (23152) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (23262) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+0
+[0;32mI (23372) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (23482) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (23592) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (23702) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (23812) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (23922) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (24032) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (24142) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (24252) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (24362) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+0
+[0;32mI (24472) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (24582) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (24692) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (24802) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (24912) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (25022) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (25132) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (25242) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (25352) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (25462) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+0
+[0;32mI (25572) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (25682) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (25792) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (25902) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (26012) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (26122) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (26232) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (26342) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (26452) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (26562) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+0
+[0;32mI (26672) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (26782) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (26892) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (27012) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (27112) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (27222) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (27332) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (27442) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (27552) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (27662) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+0
+[0;32mI (27782) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (27882) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (27992) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (28102) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (28212) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (28322) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (28432) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (28542) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (28652) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (28762) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+0
+[0;32mI (28872) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (28992) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (29092) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (29212) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (29312) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (29422) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (29532) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (29652) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (29752) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (29862) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+0
+[0;32mI (29982) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (30082) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (30192) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (30302) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (30412) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (30532) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (30632) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (30742) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (30852) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (30962) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+0
+[0;32mI (31082) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (31182) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (31292) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (31402) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (31512) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (31622) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (31732) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (31842) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (31952) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (32062) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+0
+[0;32mI (32172) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (32282) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (32392) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (32502) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (32612) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (32722) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (32832) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (32952) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (33052) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (33162) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+0
+[0;32mI (33272) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (33382) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (33502) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (33602) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (33712) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (33822) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (33932) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (34042) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (34152) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (34262) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+0
+[0;32mI (34372) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (34482) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (34592) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (34702) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (34812) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (34922) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (35032) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (35142) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (35252) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (35362) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+0
+[0;32mI (35472) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (35582) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (35692) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (35802) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (35922) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (36032) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (36132) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (36242) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+[0;32mI (36352) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m
+0
+0
+[0;32mI (36472) RX_MODULE: Received from 40:91:51:FD:F6:2C => 0[0m

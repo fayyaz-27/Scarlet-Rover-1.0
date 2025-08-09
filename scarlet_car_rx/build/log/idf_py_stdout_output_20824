@@ -1,0 +1,203 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (30) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Jul 31 2025 22:26:06[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v1.0[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=17dd8h ( 97752) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=00027e00 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (123) esp_image: segment 2: paddr=00027e24 vaddr=3ffb0000 size=03ea8h ( 16040) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=0002bcd4 vaddr=40080000 size=04344h ( 17220) load[0m
+[0;32mI (141) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=7dec8h (515784) map[0m
+[0;32mI (318) esp_image: segment 5: paddr=000adef0 vaddr=40084344 size=133fch ( 78844) load[0m
+[0;32mI (360) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (360) boot: Disabling RNG early entropy source...[0m
+[0;32mI (370) cpu_start: Multicore app[0m
+[0;32mI (379) cpu_start: Pro cpu start user code[0m
+[0;32mI (379) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (379) app_init: Application information:[0m
+[0;32mI (379) app_init: Project name:     esp_now_rx[0m
+[0;32mI (383) app_init: App version:      1[0m
+[0;32mI (386) app_init: Compile time:     Jul 31 2025 22:25:35[0m
+[0;32mI (391) app_init: ELF file SHA256:  7ee153964...[0m
+[0;32mI (396) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (400) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (403) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (407) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (412) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (418) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (423) heap_init: At 3FFB8150 len 00027EB0 (159 KiB): DRAM[0m
+[0;32mI (428) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (433) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (439) heap_init: At 40097740 len 000088C0 (34 KiB): IRAM[0m
+[0;32mI (446) spi_flash: detected chip: generic[0m
+[0;32mI (448) spi_flash: flash io: dio[0m
+[0;33mW (451) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (464) main_task: Started on CPU0[0m
+[0;32mI (474) main_task: Calling app_main()[0m
+[0;32mI (504) wifi:wifi driver task: 3ffbfe1c, prio:23, stack:6656, core=0[0m
+[0;32mI (504) wifi:wifi firmware version: 79fa3f41ba[0m
+[0;32mI (514) wifi:wifi certification version: v7.0[0m
+[0;32mI (514) wifi:config NVS flash: enabled[0m
+[0;32mI (514) wifi:config nano formatting: disabled[0m
+[0;32mI (514) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (514) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (524) wifi:Init management short buffer num: 32[0m
+[0;32mI (524) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (534) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (534) wifi:Init static rx buffer num: 10[0m
+[0;32mI (544) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (544) wifi_init: rx ba win: 6[0m
+[0;32mI (544) wifi_init: accept mbox: 6[0m
+[0;32mI (544) wifi_init: tcpip mbox: 32[0m
+[0;32mI (554) wifi_init: udp mbox: 6[0m
+[0;32mI (554) wifi_init: tcp mbox: 6[0m
+[0;32mI (554) wifi_init: tcp tx win: 5760[0m
+[0;32mI (564) wifi_init: tcp rx win: 5760[0m
+[0;32mI (564) wifi_init: tcp mss: 1440[0m
+[0;32mI (564) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (574) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (574) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (654) wifi:mode : sta (4c:eb:d6:7b:28:5c)[0m
+[0;32mI (654) wifi:enable tsf[0m
+[0;32mI (654) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (654) RX_MODULE: ESP-NOW RX initialized.[0m
+[0;32mI (654) MAIN_RX: Receiver MAC: 4C:EB:D6:7B:28:5C[0m
+0
+[0;32mI (664) RX_MODULE: Received from 40:91:51:FD:F6:2C => 1[0m
+1
+[0;32mI (774) RX_MODULE: Received from 40:91:51:FD:F6:2C => 1[0m
+1
+[0;32mI (884) RX_MODULE: Received from 40:91:51:FD:F6:2C => 1[0m
+1
+[0;32mI (994) RX_MODULE: Received from 40:91:51:FD:F6:2C => 1[0m
+1
+[0;32mI (1104) RX_MODULE: Received from 40:91:51:FD:F6:2C => 1[0m
+1
+[0;32mI (1214) RX_MODULE: Received from 40:91:51:FD:F6:2C => 1[0m
+1
+[0;32mI (1324) RX_MODULE: Received from 40:91:51:FD:F6:2C => 1[0m
+1
+[0;32mI (1434) RX_MODULE: Received from 40:91:51:FD:F6:2C => 1[0m
+1
+[0;32mI (1544) RX_MODULE: Received from 40:91:51:FD:F6:2C => 1[0m
+1
+[0;32mI (1654) RX_MODULE: Received from 40:91:51:FD:F6:2C => 1[0m
+1
+1
+[0;32mI (1764) RX_MODULE: Received from 40:91:51:FD:F6:2C => 1[0m
+1
+[0;32mI (1874) RX_MODULE: Received from 40:91:51:FD:F6:2C => 1[0m
+1
+[0;32mI (1984) RX_MODULE: Received from 40:91:51:FD:F6:2C => 1[0m
+1
+[0;32mI (2094) RX_MODULE: Received from 40:91:51:FD:F6:2C => 1[0m
+1
+[0;32mI (2204) RX_MODULE: Received from 40:91:51:FD:F6:2C => 1[0m
+1
+[0;32mI (2314) RX_MODULE: Received from 40:91:51:FD:F6:2C => 1[0m
+1
+[0;32mI (2424) RX_MODULE: Received from 40:91:51:FD:F6:2C => 1[0m
+1
+[0;32mI (2534) RX_MODULE: Received from 40:91:51:FD:F6:2C => 1[0m
+1
+[0;32mI (2644) RX_MODULE: Received from 40:91:51:FD:F6:2C => 1[0m
+1
+[0;32mI (2754) RX_MODULE: Received from 40:91:51:FD:F6:2C => 1[0m
+1
+1
+[0;32mI (2864) RX_MODULE: Received from 40:91:51:FD:F6:2C => 1[0m
+1
+[0;32mI (2974) RX_MODULE: Received from 40:91:51:FD:F6:2C => 1[0m
+1
+[0;32mI (3084) RX_MODULE: Received from 40:91:51:FD:F6:2C => 1[0m
+1
+[0;32mI (3194) RX_MODULE: Received from 40:91:51:FD:F6:2C => 1[0m
+1
+[0;32mI (3304) RX_MODULE: Received from 40:91:51:FD:F6:2C => 1[0m
+1
+[0;32mI (3414) RX_MODULE: Received from 40:91:51:FD:F6:2C => 1[0m
+1
+[0;32mI (3524) RX_MODULE: Received from 40:91:51:FD:F6:2C => 1[0m
+1
+[0;32mI (3634) RX_MODULE: Received from 40:91:51:FD:F6:2C => 1[0m
+1
+[0;32mI (3744) RX_MODULE: Received from 40:91:51:FD:F6:2C => 1[0m
+1
+[0;32mI (3854) RX_MODULE: Received from 40:91:51:FD:F6:2C => 1[0m
+1
+1
+[0;32mI (3964) RX_MODULE: Received from 40:91:51:FD:F6:2C => 1[0m
+1
+[0;32mI (4074) RX_MODULE: Received from 40:91:51:FD:F6:2C => 1[0m
+1
+[0;32mI (4184) RX_MODULE: Received from 40:91:51:FD:F6:2C => 1[0m
+1
+[0;32mI (4294) RX_MODULE: Received from 40:91:51:FD:F6:2C => 1[0m
+1
+[0;32mI (4414) RX_MODULE: Received from 40:91:51:FD:F6:2C => 1[0m
+1
+[0;32mI (4514) RX_MODULE: Received from 40:91:51:FD:F6:2C => 1[0m
+1
+[0;32mI (4624) RX_MODULE: Received from 40:91:51:FD:F6:2C => 1[0m
+1
+[0;32mI (4734) RX_MODULE: Received from 40:91:51:FD:F6:2C => 1[0m
+1
+[0;32mI (4844) RX_MODULE: Received from 40:91:51:FD:F6:2C => 1[0m
+1
+[0;32mI (4954) RX_MODULE: Received from 40:91:51:FD:F6:2C => 1[0m
+1
+1
+[0;32mI (5064) RX_MODULE: Received from 40:91:51:FD:F6:2C => 1[0m
+1
+[0;32mI (5174) RX_MODULE: Received from 40:91:51:FD:F6:2C => 1[0m
+1
+[0;32mI (5284) RX_MODULE: Received from 40:91:51:FD:F6:2C => 1[0m
+1
+[0;32mI (5394) RX_MODULE: Received from 40:91:51:FD:F6:2C => 1[0m
+1
+[0;32mI (5504) RX_MODULE: Received from 40:91:51:FD:F6:2C => 1[0m
+1
+[0;32mI (5614) RX_MODULE: Received from 40:91:51:FD:F6:2C => 1[0m
+1
+[0;32mI (5724) RX_MODULE: Received from 40:91:51:FD:F6:2C => 1[0m
+1
+[0;32mI (5834) RX_MODULE: Received from 40:91:51:FD:F6:2C => 1[0m
+1
+[0;32mI (5944) RX_MODULE: Received from 40:91:51:FD:F6:2C => 1[0m
+1
+[0;32mI (6054) RX_MODULE: Received from 40:91:51:FD:F6:2C => 1[0m
+1
+1
+[0;32mI (6164) RX_MODULE: Received from 40:91:51:FD:F6:2C => 1[0m
+1
+[0;32mI (6274) RX_MODULE: Received from 40:91:51:FD:F6:2C => 1[0m
+1
+[0;32mI (6384) RX_MODULE: Received from 40:91:51:FD:F6:2C => 1[0m
+1
+[0;32mI (6494) RX_MODULE: Received from 40:91:51:FD:F6:2C => 1[0m
+1
+[0;32mI (6604) RX_MODULE: Received from 40:91:51:FD:F6:2C => 1[0m
+1
+[0;32mI (6714) RX_MODULE: Received from 40:91:51:FD:F6:2C => 1[0m
+1

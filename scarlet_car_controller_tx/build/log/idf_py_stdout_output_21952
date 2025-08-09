@@ -1,0 +1,1146 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul 29 2025 17:39:06[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.0[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b9a0h ( 47520) map[0m
+[0;32mI (106) esp_image: segment 1: paddr=0001b9c8 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (106) esp_image: segment 2: paddr=0001b9ec vaddr=3ffb0000 size=02344h (  9028) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=0001dd38 vaddr=40080000 size=022e0h (  8928) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=1b300h (111360) map[0m
+[0;32mI (163) esp_image: segment 5: paddr=0003b328 vaddr=400822e0 size=0c120h ( 49440) load[0m
+[0;32mI (189) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (189) boot: Disabling RNG early entropy source...[0m
+[0;32mI (200) cpu_start: Multicore app[0m
+[0;32mI (208) cpu_start: Pro cpu start user code[0m
+[0;32mI (208) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (208) app_init: Application information:[0m
+[0;32mI (208) app_init: Project name:     scarlet_car_controller_tx[0m
+[0;32mI (214) app_init: App version:      1[0m
+[0;32mI (217) app_init: Compile time:     Jul 29 2025 17:38:32[0m
+[0;32mI (222) app_init: ELF file SHA256:  df9216870...[0m
+[0;32mI (227) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (230) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (234) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (238) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (242) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (248) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (253) heap_init: At 3FFB2C10 len 0002D3F0 (180 KiB): DRAM[0m
+[0;32mI (259) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (264) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (270) heap_init: At 4008E400 len 00011C00 (71 KiB): IRAM[0m
+[0;32mI (276) spi_flash: detected chip: generic[0m
+[0;32mI (278) spi_flash: flash io: dio[0m
+[0;33mW (281) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (294) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (304) main_task: Started on CPU0[0m
+[0;32mI (314) main_task: Calling app_main()[0m
+[0;32mI (314) MPU6050: MPU6050 initialization successful with code: 0[0m
+[0;32mI (314) MPU6050: WHO AM I Register Value: 0x68[0m
+[0;32mI (364) E32 LoRa: E32 LoRa Module Initialized[0m
+[0;32mI (364) E32 LoRa: E32 LoRa Initialization Successful ![0m
+[0;32mI (864) MPU6050: Acceleration:-  X-Axis: 1.01, Y-Axis: 0.00, Z-Axis: -0.07[0m
+[0;32mI (864) MPU6050: Gyroscope:- X-Axis: -0.88, Y-Axis: 5.71, Z-Axis: 2.60[0m
+[0;32mI (864) MPU6050: Temperature:- 30.46[0m
+Device Left Tilt: 1
+[0;32mI (974) MPU6050: Acceleration:-  X-Axis: 1.01, Y-Axis: -0.00, Z-Axis: -0.06[0m
+[0;32mI (974) MPU6050: Gyroscope:- X-Axis: 6.24, Y-Axis: -0.47, Z-Axis: 0.64[0m
+[0;32mI (974) MPU6050: Temperature:- 30.46[0m
+Device Left Tilt: 1
+[0;32mI (1084) MPU6050: Acceleration:-  X-Axis: 1.01, Y-Axis: 0.00, Z-Axis: -0.06[0m
+[0;32mI (1084) MPU6050: Gyroscope:- X-Axis: -0.43, Y-Axis: -1.78, Z-Axis: -0.47[0m
+[0;32mI (1084) MPU6050: Temperature:- 30.60[0m
+Device Left Tilt: 1
+[0;32mI (1194) MPU6050: Acceleration:-  X-Axis: 1.02, Y-Axis: 0.01, Z-Axis: -0.13[0m
+[0;32mI (1194) MPU6050: Gyroscope:- X-Axis: 13.90, Y-Axis: 2.02, Z-Axis: 2.56[0m
+[0;32mI (1194) MPU6050: Temperature:- 30.69[0m
+Device Left Tilt: 1
+[0;32mI (1304) MPU6050: Acceleration:-  X-Axis: 0.98, Y-Axis: -0.04, Z-Axis: -0.04[0m
+[0;32mI (1304) MPU6050: Gyroscope:- X-Axis: -10.88, Y-Axis: 24.15, Z-Axis: 13.98[0m
+[0;32mI (1304) MPU6050: Temperature:- 30.65[0m
+Device Left Tilt: 1
+[0;32mI (1414) MPU6050: Acceleration:-  X-Axis: 0.92, Y-Axis: 0.04, Z-Axis: 0.11[0m
+[0;32mI (1414) MPU6050: Gyroscope:- X-Axis: 5.31, Y-Axis: 138.27, Z-Axis: -0.34[0m
+[0;32mI (1414) MPU6050: Temperature:- 30.51[0m
+Device Left Tilt: 1
+[0;32mI (1524) MPU6050: Acceleration:-  X-Axis: 0.86, Y-Axis: 0.00, Z-Axis: 0.44[0m
+[0;32mI (1524) MPU6050: Gyroscope:- X-Axis: 3.26, Y-Axis: 102.85, Z-Axis: 2.59[0m
+[0;32mI (1524) MPU6050: Temperature:- 30.55[0m
+Device Left Tilt: 1
+[0;32mI (1634) MPU6050: Acceleration:-  X-Axis: 0.62, Y-Axis: 0.01, Z-Axis: 0.66[0m
+[0;32mI (1634) MPU6050: Gyroscope:- X-Axis: -16.36, Y-Axis: 217.98, Z-Axis: -14.43[0m
+[0;32mI (1634) MPU6050: Temperature:- 30.69[0m
+Device Left Tilt: 1
+[0;32mI (1744) MPU6050: Acceleration:-  X-Axis: 0.27, Y-Axis: 0.06, Z-Axis: 0.87[0m
+[0;32mI (1744) MPU6050: Gyroscope:- X-Axis: -2.38, Y-Axis: 133.80, Z-Axis: -4.70[0m
+[0;32mI (1744) MPU6050: Temperature:- 30.55[0m
+[0;32mI (1844) MPU6050: Acceleration:-  X-Axis: 0.13, Y-Axis: -0.01, Z-Axis: 0.90[0m
+[0;32mI (1844) MPU6050: Gyroscope:- X-Axis: 0.50, Y-Axis: 32.61, Z-Axis: -0.25[0m
+[0;32mI (1844) MPU6050: Temperature:- 30.55[0m
+[0;32mI (1944) MPU6050: Acceleration:-  X-Axis: 0.11, Y-Axis: 0.01, Z-Axis: 0.90[0m
+[0;32mI (1944) MPU6050: Gyroscope:- X-Axis: -1.26, Y-Axis: 24.73, Z-Axis: -0.25[0m
+[0;32mI (1944) MPU6050: Temperature:- 30.65[0m
+[0;32mI (2044) MPU6050: Acceleration:-  X-Axis: -0.10, Y-Axis: -0.02, Z-Axis: 0.97[0m
+[0;32mI (2044) MPU6050: Gyroscope:- X-Axis: -17.50, Y-Axis: 59.45, Z-Axis: -6.32[0m
+[0;32mI (2044) MPU6050: Temperature:- 30.65[0m
+[0;32mI (2144) MPU6050: Acceleration:-  X-Axis: -0.05, Y-Axis: 0.02, Z-Axis: 0.91[0m
+[0;32mI (2144) MPU6050: Gyroscope:- X-Axis: -11.80, Y-Axis: 1.24, Z-Axis: 2.80[0m
+[0;32mI (2144) MPU6050: Temperature:- 30.74[0m
+[0;32mI (2244) MPU6050: Acceleration:-  X-Axis: -0.07, Y-Axis: -0.02, Z-Axis: 0.87[0m
+[0;32mI (2244) MPU6050: Gyroscope:- X-Axis: 5.01, Y-Axis: -0.72, Z-Axis: -14.13[0m
+[0;32mI (2244) MPU6050: Temperature:- 30.74[0m
+[0;32mI (2344) MPU6050: Acceleration:-  X-Axis: 0.01, Y-Axis: -0.00, Z-Axis: 0.89[0m
+[0;32mI (2344) MPU6050: Gyroscope:- X-Axis: 7.18, Y-Axis: 13.88, Z-Axis: -3.23[0m
+[0;32mI (2344) MPU6050: Temperature:- 30.65[0m
+[0;32mI (2444) MPU6050: Acceleration:-  X-Axis: -0.13, Y-Axis: -0.01, Z-Axis: 0.88[0m
+[0;32mI (2444) MPU6050: Gyroscope:- X-Axis: 14.63, Y-Axis: 0.17, Z-Axis: 5.67[0m
+[0;32mI (2444) MPU6050: Temperature:- 30.74[0m
+[0;32mI (2544) MPU6050: Acceleration:-  X-Axis: -0.13, Y-Axis: 0.07, Z-Axis: 0.94[0m
+[0;32mI (2544) MPU6050: Gyroscope:- X-Axis: -5.18, Y-Axis: -19.60, Z-Axis: -0.16[0m
+[0;32mI (2544) MPU6050: Temperature:- 30.65[0m
+[0;32mI (2644) MPU6050: Acceleration:-  X-Axis: -0.21, Y-Axis: -0.01, Z-Axis: 0.94[0m
+[0;32mI (2644) MPU6050: Gyroscope:- X-Axis: 0.04, Y-Axis: 15.07, Z-Axis: -0.90[0m
+[0;32mI (2644) MPU6050: Temperature:- 30.69[0m
+[0;32mI (2744) MPU6050: Acceleration:-  X-Axis: -0.15, Y-Axis: 0.01, Z-Axis: 0.97[0m
+[0;32mI (2744) MPU6050: Gyroscope:- X-Axis: -1.68, Y-Axis: -24.21, Z-Axis: -5.33[0m
+[0;32mI (2744) MPU6050: Temperature:- 30.65[0m
+[0;32mI (2844) MPU6050: Acceleration:-  X-Axis: -0.06, Y-Axis: 0.04, Z-Axis: 0.95[0m
+[0;32mI (2844) MPU6050: Gyroscope:- X-Axis: -0.22, Y-Axis: -27.34, Z-Axis: 0.30[0m
+[0;32mI (2844) MPU6050: Temperature:- 30.69[0m
+[0;32mI (2944) MPU6050: Acceleration:-  X-Axis: -0.02, Y-Axis: 0.00, Z-Axis: 0.92[0m
+[0;32mI (2944) MPU6050: Gyroscope:- X-Axis: -1.41, Y-Axis: -14.72, Z-Axis: 0.18[0m
+[0;32mI (2944) MPU6050: Temperature:- 30.79[0m
+[0;32mI (3044) MPU6050: Acceleration:-  X-Axis: 0.03, Y-Axis: 0.01, Z-Axis: 0.89[0m
+[0;32mI (3044) MPU6050: Gyroscope:- X-Axis: 0.23, Y-Axis: 27.80, Z-Axis: 0.12[0m
+[0;32mI (3044) MPU6050: Temperature:- 30.69[0m
+[0;32mI (3144) MPU6050: Acceleration:-  X-Axis: 0.04, Y-Axis: -0.00, Z-Axis: 0.87[0m
+[0;32mI (3144) MPU6050: Gyroscope:- X-Axis: -0.60, Y-Axis: -35.67, Z-Axis: 0.71[0m
+[0;32mI (3144) MPU6050: Temperature:- 30.69[0m
+[0;32mI (3244) MPU6050: Acceleration:-  X-Axis: 0.19, Y-Axis: -0.03, Z-Axis: 0.99[0m
+[0;32mI (3244) MPU6050: Gyroscope:- X-Axis: -4.02, Y-Axis: -68.77, Z-Axis: -27.92[0m
+[0;32mI (3244) MPU6050: Temperature:- 30.79[0m
+[0;32mI (3344) MPU6050: Acceleration:-  X-Axis: 0.48, Y-Axis: 0.02, Z-Axis: 1.44[0m
+[0;32mI (3344) MPU6050: Gyroscope:- X-Axis: -57.79, Y-Axis: 230.89, Z-Axis: -62.85[0m
+[0;32mI (3344) MPU6050: Temperature:- 30.69[0m
+[0;32mI (3444) MPU6050: Acceleration:-  X-Axis: -0.50, Y-Axis: -0.10, Z-Axis: 0.90[0m
+[0;32mI (3444) MPU6050: Gyroscope:- X-Axis: -13.51, Y-Axis: 241.92, Z-Axis: 4.53[0m
+[0;32mI (3444) MPU6050: Temperature:- 30.79[0m
+[0;32mI (3544) MPU6050: Acceleration:-  X-Axis: -0.52, Y-Axis: -0.04, Z-Axis: 0.72[0m
+[0;32mI (3544) MPU6050: Gyroscope:- X-Axis: -13.51, Y-Axis: 134.65, Z-Axis: 35.09[0m
+[0;32mI (3544) MPU6050: Temperature:- 30.69[0m
+Device Right Tilt: 2
+[0;32mI (3654) MPU6050: Acceleration:-  X-Axis: -0.81, Y-Axis: -0.05, Z-Axis: 0.54[0m
+[0;32mI (3654) MPU6050: Gyroscope:- X-Axis: -6.64, Y-Axis: 74.75, Z-Axis: 28.00[0m
+[0;32mI (3654) MPU6050: Temperature:- 30.69[0m
+Device Right Tilt: 2
+[0;32mI (3764) MPU6050: Acceleration:-  X-Axis: -0.85, Y-Axis: -0.04, Z-Axis: 0.37[0m
+[0;32mI (3764) MPU6050: Gyroscope:- X-Axis: -1.26, Y-Axis: 52.48, Z-Axis: 25.55[0m
+[0;32mI (3764) MPU6050: Temperature:- 30.69[0m
+Device Right Tilt: 2
+[0;32mI (3874) MPU6050: Acceleration:-  X-Axis: -0.94, Y-Axis: -0.01, Z-Axis: 0.27[0m
+[0;32mI (3874) MPU6050: Gyroscope:- X-Axis: -12.82, Y-Axis: 15.30, Z-Axis: 3.21[0m
+[0;32mI (3874) MPU6050: Temperature:- 30.74[0m
+Device Right Tilt: 2
+[0;32mI (3984) MPU6050: Acceleration:-  X-Axis: -1.00, Y-Axis: -0.01, Z-Axis: 0.24[0m
+[0;32mI (3984) MPU6050: Gyroscope:- X-Axis: -7.19, Y-Axis: 26.14, Z-Axis: -4.21[0m
+[0;32mI (3984) MPU6050: Temperature:- 30.69[0m
+Device Right Tilt: 2
+[0;32mI (4094) MPU6050: Acceleration:-  X-Axis: -0.99, Y-Axis: -0.00, Z-Axis: 0.24[0m
+[0;32mI (4094) MPU6050: Gyroscope:- X-Axis: -10.38, Y-Axis: 3.56, Z-Axis: -10.97[0m
+[0;32mI (4094) MPU6050: Temperature:- 30.84[0m
+Device Right Tilt: 2
+[0;32mI (4204) MPU6050: Acceleration:-  X-Axis: -0.96, Y-Axis: -0.03, Z-Axis: 0.20[0m
+[0;32mI (4204) MPU6050: Gyroscope:- X-Axis: 7.60, Y-Axis: 8.56, Z-Axis: -9.48[0m
+[0;32mI (4204) MPU6050: Temperature:- 30.69[0m
+Device Right Tilt: 2
+[0;32mI (4314) MPU6050: Acceleration:-  X-Axis: -0.95, Y-Axis: -0.02, Z-Axis: 0.21[0m
+[0;32mI (4314) MPU6050: Gyroscope:- X-Axis: 8.46, Y-Axis: -30.34, Z-Axis: 6.76[0m
+[0;32mI (4314) MPU6050: Temperature:- 30.74[0m
+Device Right Tilt: 2
+[0;32mI (4424) MPU6050: Acceleration:-  X-Axis: -0.82, Y-Axis: 0.04, Z-Axis: 0.31[0m
+[0;32mI (4424) MPU6050: Gyroscope:- X-Axis: 7.04, Y-Axis: -93.64, Z-Axis: 23.69[0m
+[0;32mI (4424) MPU6050: Temperature:- 30.84[0m
+Device Right Tilt: 2
+[0;32mI (4534) MPU6050: Acceleration:-  X-Axis: -0.73, Y-Axis: 0.07, Z-Axis: 0.61[0m
+[0;32mI (4534) MPU6050: Gyroscope:- X-Axis: -20.10, Y-Axis: -211.97, Z-Axis: 46.50[0m
+[0;32mI (4534) MPU6050: Temperature:- 30.69[0m
+Device Right Tilt: 2
+[0;32mI (4644) MPU6050: Acceleration:-  X-Axis: -0.62, Y-Axis: 0.07, Z-Axis: 0.81[0m
+[0;32mI (4644) MPU6050: Gyroscope:- X-Axis: -14.39, Y-Axis: -178.17, Z-Axis: -2.80[0m
+[0;32mI (4644) MPU6050: Temperature:- 30.74[0m
+Device Right Tilt: 2
+[0;32mI (4754) MPU6050: Acceleration:-  X-Axis: -0.18, Y-Axis: 0.08, Z-Axis: 0.84[0m
+[0;32mI (4754) MPU6050: Gyroscope:- X-Axis: -24.50, Y-Axis: -60.65, Z-Axis: 13.00[0m
+[0;32mI (4754) MPU6050: Temperature:- 30.79[0m
+[0;32mI (4854) MPU6050: Acceleration:-  X-Axis: -0.15, Y-Axis: 0.05, Z-Axis: 0.86[0m
+[0;32mI (4854) MPU6050: Gyroscope:- X-Axis: -15.42, Y-Axis: -62.40, Z-Axis: -1.70[0m
+[0;32mI (4854) MPU6050: Temperature:- 30.69[0m
+[0;32mI (4954) MPU6050: Acceleration:-  X-Axis: -0.02, Y-Axis: -0.05, Z-Axis: 0.96[0m
+[0;32mI (4954) MPU6050: Gyroscope:- X-Axis: -11.79, Y-Axis: -16.44, Z-Axis: 1.90[0m
+[0;32mI (4954) MPU6050: Temperature:- 30.88[0m
+[0;32mI (5054) MPU6050: Acceleration:-  X-Axis: -0.00, Y-Axis: -0.02, Z-Axis: 0.91[0m
+[0;32mI (5054) MPU6050: Gyroscope:- X-Axis: 5.84, Y-Axis: -14.85, Z-Axis: -0.56[0m
+[0;32mI (5054) MPU6050: Temperature:- 30.79[0m
+[0;32mI (5154) MPU6050: Acceleration:-  X-Axis: -0.04, Y-Axis: -0.03, Z-Axis: 0.90[0m
+[0;32mI (5154) MPU6050: Gyroscope:- X-Axis: -3.97, Y-Axis: -7.96, Z-Axis: -1.40[0m
+[0;32mI (5154) MPU6050: Temperature:- 30.79[0m
+[0;32mI (5254) MPU6050: Acceleration:-  X-Axis: -0.03, Y-Axis: -0.01, Z-Axis: 0.94[0m
+[0;32mI (5254) MPU6050: Gyroscope:- X-Axis: -11.51, Y-Axis: -0.67, Z-Axis: -5.02[0m
+[0;32mI (5254) MPU6050: Temperature:- 30.79[0m
+[0;32mI (5354) MPU6050: Acceleration:-  X-Axis: -0.01, Y-Axis: -0.05, Z-Axis: 0.94[0m
+[0;32mI (5354) MPU6050: Gyroscope:- X-Axis: -12.66, Y-Axis: -8.33, Z-Axis: -8.38[0m
+[0;32mI (5354) MPU6050: Temperature:- 30.74[0m
+[0;32mI (5454) MPU6050: Acceleration:-  X-Axis: -0.06, Y-Axis: -0.05, Z-Axis: 0.89[0m
+[0;32mI (5454) MPU6050: Gyroscope:- X-Axis: 13.24, Y-Axis: 9.15, Z-Axis: -0.76[0m
+[0;32mI (5454) MPU6050: Temperature:- 30.74[0m
+[0;32mI (5554) MPU6050: Acceleration:-  X-Axis: -0.03, Y-Axis: 0.09, Z-Axis: 0.95[0m
+[0;32mI (5554) MPU6050: Gyroscope:- X-Axis: 78.82, Y-Axis: 19.73, Z-Axis: 7.27[0m
+[0;32mI (5554) MPU6050: Temperature:- 30.84[0m
+[0;32mI (5654) MPU6050: Acceleration:-  X-Axis: -0.02, Y-Axis: 0.15, Z-Axis: 0.97[0m
+[0;32mI (5654) MPU6050: Gyroscope:- X-Axis: 97.38, Y-Axis: -11.27, Z-Axis: 1.05[0m
+[0;32mI (5654) MPU6050: Temperature:- 30.74[0m
+[0;32mI (5754) MPU6050: Acceleration:-  X-Axis: -0.10, Y-Axis: 0.37, Z-Axis: 0.71[0m
+[0;32mI (5754) MPU6050: Gyroscope:- X-Axis: 115.91, Y-Axis: 42.70, Z-Axis: 4.69[0m
+[0;32mI (5754) MPU6050: Temperature:- 30.79[0m
+[0;32mI (5854) MPU6050: Acceleration:-  X-Axis: -0.15, Y-Axis: 0.52, Z-Axis: 0.77[0m
+[0;32mI (5854) MPU6050: Gyroscope:- X-Axis: 85.79, Y-Axis: -10.34, Z-Axis: 22.73[0m
+[0;32mI (5854) MPU6050: Temperature:- 30.84[0m
+Reverse Tilt: 3
+[0;32mI (5964) MPU6050: Acceleration:-  X-Axis: -0.20, Y-Axis: 0.63, Z-Axis: 0.83[0m
+[0;32mI (5964) MPU6050: Gyroscope:- X-Axis: 49.44, Y-Axis: 17.51, Z-Axis: 19.56[0m
+[0;32mI (5964) MPU6050: Temperature:- 30.79[0m
+Reverse Tilt: 3
+[0;32mI (6074) MPU6050: Acceleration:-  X-Axis: -0.12, Y-Axis: 0.70, Z-Axis: 0.57[0m
+[0;32mI (6074) MPU6050: Gyroscope:- X-Axis: 48.06, Y-Axis: 12.45, Z-Axis: 11.33[0m
+[0;32mI (6074) MPU6050: Temperature:- 30.74[0m
+Reverse Tilt: 3
+[0;32mI (6184) MPU6050: Acceleration:-  X-Axis: -0.03, Y-Axis: 0.74, Z-Axis: 0.54[0m
+[0;32mI (6184) MPU6050: Gyroscope:- X-Axis: 13.58, Y-Axis: 7.27, Z-Axis: 9.85[0m
+[0;32mI (6184) MPU6050: Temperature:- 30.79[0m
+Reverse Tilt: 3
+[0;32mI (6284) MPU6050: Acceleration:-  X-Axis: -0.08, Y-Axis: 0.77, Z-Axis: 0.48[0m
+[0;32mI (6284) MPU6050: Gyroscope:- X-Axis: 29.88, Y-Axis: 6.51, Z-Axis: 11.40[0m
+[0;32mI (6284) MPU6050: Temperature:- 30.88[0m
+Reverse Tilt: 3
+[0;32mI (6384) MPU6050: Acceleration:-  X-Axis: -0.15, Y-Axis: 0.73, Z-Axis: 0.55[0m
+[0;32mI (6384) MPU6050: Gyroscope:- X-Axis: -15.92, Y-Axis: -23.73, Z-Axis: 14.27[0m
+[0;32mI (6384) MPU6050: Temperature:- 30.79[0m
+Reverse Tilt: 3
+[0;32mI (6494) MPU6050: Acceleration:-  X-Axis: -0.09, Y-Axis: 0.80, Z-Axis: 0.52[0m
+[0;32mI (6494) MPU6050: Gyroscope:- X-Axis: -7.32, Y-Axis: 2.86, Z-Axis: -0.56[0m
+[0;32mI (6494) MPU6050: Temperature:- 30.74[0m
+Reverse Tilt: 3
+[0;32mI (6594) MPU6050: Acceleration:-  X-Axis: -0.08, Y-Axis: 0.75, Z-Axis: 0.59[0m
+[0;32mI (6594) MPU6050: Gyroscope:- X-Axis: 5.02, Y-Axis: 0.37, Z-Axis: 1.10[0m
+[0;32mI (6594) MPU6050: Temperature:- 30.84[0m
+Reverse Tilt: 3
+[0;32mI (6694) MPU6050: Acceleration:-  X-Axis: -0.06, Y-Axis: 0.69, Z-Axis: 0.61[0m
+[0;32mI (6694) MPU6050: Gyroscope:- X-Axis: -5.60, Y-Axis: -10.08, Z-Axis: 7.20[0m
+[0;32mI (6694) MPU6050: Temperature:- 30.74[0m
+Reverse Tilt: 3
+[0;32mI (6804) MPU6050: Acceleration:-  X-Axis: -0.12, Y-Axis: 0.77, Z-Axis: 0.62[0m
+[0;32mI (6804) MPU6050: Gyroscope:- X-Axis: -135.51, Y-Axis: 4.64, Z-Axis: -49.23[0m
+[0;32mI (6804) MPU6050: Temperature:- 30.79[0m
+Reverse Tilt: 3
+[0;32mI (6914) MPU6050: Acceleration:-  X-Axis: -0.20, Y-Axis: 0.64, Z-Axis: 0.68[0m
+[0;32mI (6914) MPU6050: Gyroscope:- X-Axis: -115.26, Y-Axis: 13.58, Z-Axis: -18.21[0m
+[0;32mI (6914) MPU6050: Temperature:- 30.93[0m
+Reverse Tilt: 3
+[0;32mI (7024) MPU6050: Acceleration:-  X-Axis: -0.17, Y-Axis: 0.44, Z-Axis: 0.67[0m
+[0;32mI (7024) MPU6050: Gyroscope:- X-Axis: -138.08, Y-Axis: 23.98, Z-Axis: -11.05[0m
+[0;32mI (7024) MPU6050: Temperature:- 30.69[0m
+[0;32mI (7124) MPU6050: Acceleration:-  X-Axis: -0.34, Y-Axis: 0.07, Z-Axis: 0.76[0m
+[0;32mI (7124) MPU6050: Gyroscope:- X-Axis: -95.38, Y-Axis: 46.24, Z-Axis: -6.74[0m
+[0;32mI (7124) MPU6050: Temperature:- 30.74[0m
+[0;32mI (7224) MPU6050: Acceleration:-  X-Axis: -0.45, Y-Axis: -0.07, Z-Axis: 0.79[0m
+[0;32mI (7224) MPU6050: Gyroscope:- X-Axis: -93.19, Y-Axis: 57.56, Z-Axis: -4.55[0m
+[0;32mI (7224) MPU6050: Temperature:- 30.79[0m
+[0;32mI (7324) MPU6050: Acceleration:-  X-Axis: -0.14, Y-Axis: -0.30, Z-Axis: 0.84[0m
+[0;32mI (7324) MPU6050: Gyroscope:- X-Axis: -68.63, Y-Axis: 63.92, Z-Axis: -29.24[0m
+[0;32mI (7324) MPU6050: Temperature:- 30.84[0m
+[0;32mI (7424) MPU6050: Acceleration:-  X-Axis: -0.15, Y-Axis: -0.45, Z-Axis: 0.84[0m
+[0;32mI (7424) MPU6050: Gyroscope:- X-Axis: -60.54, Y-Axis: 24.08, Z-Axis: -45.50[0m
+[0;32mI (7424) MPU6050: Temperature:- 30.79[0m
+[0;32mI (7524) MPU6050: Acceleration:-  X-Axis: -0.10, Y-Axis: -0.52, Z-Axis: 0.82[0m
+[0;32mI (7524) MPU6050: Gyroscope:- X-Axis: -48.68, Y-Axis: 14.60, Z-Axis: -17.32[0m
+[0;32mI (7524) MPU6050: Temperature:- 30.74[0m
+Forward Tilt: 4
+[0;32mI (7634) MPU6050: Acceleration:-  X-Axis: -0.19, Y-Axis: -0.53, Z-Axis: 0.73[0m
+[0;32mI (7634) MPU6050: Gyroscope:- X-Axis: -29.52, Y-Axis: 0.99, Z-Axis: -8.47[0m
+[0;32mI (7634) MPU6050: Temperature:- 30.79[0m
+Forward Tilt: 4
+[0;32mI (7744) MPU6050: Acceleration:-  X-Axis: -0.20, Y-Axis: -0.57, Z-Axis: 0.69[0m
+[0;32mI (7744) MPU6050: Gyroscope:- X-Axis: -19.48, Y-Axis: 26.82, Z-Axis: -17.95[0m
+[0;32mI (7744) MPU6050: Temperature:- 30.84[0m
+Forward Tilt: 4
+[0;32mI (7854) MPU6050: Acceleration:-  X-Axis: -0.25, Y-Axis: -0.63, Z-Axis: 0.65[0m
+[0;32mI (7854) MPU6050: Gyroscope:- X-Axis: -4.24, Y-Axis: 17.04, Z-Axis: -5.95[0m
+[0;32mI (7854) MPU6050: Temperature:- 30.79[0m
+Forward Tilt: 4
+[0;32mI (7964) MPU6050: Acceleration:-  X-Axis: -0.19, Y-Axis: -0.62, Z-Axis: 0.64[0m
+[0;32mI (7964) MPU6050: Gyroscope:- X-Axis: 7.56, Y-Axis: 44.27, Z-Axis: -10.60[0m
+[0;32mI (7964) MPU6050: Temperature:- 30.84[0m
+Forward Tilt: 4
+[0;32mI (8074) MPU6050: Acceleration:-  X-Axis: -0.25, Y-Axis: -0.57, Z-Axis: 0.64[0m
+[0;32mI (8074) MPU6050: Gyroscope:- X-Axis: 3.34, Y-Axis: 6.47, Z-Axis: 0.18[0m
+[0;32mI (8074) MPU6050: Temperature:- 30.88[0m
+Forward Tilt: 4
+[0;32mI (8174) MPU6050: Acceleration:-  X-Axis: -0.18, Y-Axis: -0.62, Z-Axis: 0.75[0m
+[0;32mI (8174) MPU6050: Gyroscope:- X-Axis: -3.30, Y-Axis: -14.25, Z-Axis: 7.07[0m
+[0;32mI (8174) MPU6050: Temperature:- 30.74[0m
+Forward Tilt: 4
+[0;32mI (8284) MPU6050: Acceleration:-  X-Axis: -0.11, Y-Axis: -0.44, Z-Axis: 0.72[0m
+[0;32mI (8284) MPU6050: Gyroscope:- X-Axis: 63.35, Y-Axis: 23.77, Z-Axis: 23.43[0m
+[0;32mI (8284) MPU6050: Temperature:- 30.79[0m
+[0;32mI (8384) MPU6050: Acceleration:-  X-Axis: -0.12, Y-Axis: -0.24, Z-Axis: 0.85[0m
+[0;32mI (8384) MPU6050: Gyroscope:- X-Axis: 123.20, Y-Axis: 57.66, Z-Axis: 43.80[0m
+[0;32mI (8384) MPU6050: Temperature:- 30.88[0m
+[0;32mI (8484) MPU6050: Acceleration:-  X-Axis: -0.55, Y-Axis: 0.01, Z-Axis: 0.63[0m
+[0;32mI (8484) MPU6050: Gyroscope:- X-Axis: 190.95, Y-Axis: 119.37, Z-Axis: 67.65[0m
+[0;32mI (8484) MPU6050: Temperature:- 30.74[0m
+Device Right Tilt: 2
+[0;32mI (8594) MPU6050: Acceleration:-  X-Axis: -0.49, Y-Axis: 0.39, Z-Axis: 0.82[0m
+[0;32mI (8594) MPU6050: Gyroscope:- X-Axis: 203.45, Y-Axis: 84.53, Z-Axis: 50.68[0m
+[0;32mI (8594) MPU6050: Temperature:- 30.84[0m
+[0;32mI (8694) MPU6050: Acceleration:-  X-Axis: -0.52, Y-Axis: 0.66, Z-Axis: 0.17[0m
+[0;32mI (8694) MPU6050: Gyroscope:- X-Axis: 250.13, Y-Axis: 101.75, Z-Axis: 47.31[0m
+[0;32mI (8694) MPU6050: Temperature:- 30.79[0m
+Device Right Tilt: 2
+[0;32mI (8804) MPU6050: Acceleration:-  X-Axis: -0.55, Y-Axis: 0.74, Z-Axis: 0.24[0m
+[0;32mI (8804) MPU6050: Gyroscope:- X-Axis: 93.48, Y-Axis: -53.64, Z-Axis: 46.50[0m
+[0;32mI (8804) MPU6050: Temperature:- 30.79[0m
+Device Right Tilt: 2
+[0;32mI (8914) MPU6050: Acceleration:-  X-Axis: -0.25, Y-Axis: 1.02, Z-Axis: 0.08[0m
+[0;32mI (8914) MPU6050: Gyroscope:- X-Axis: 81.03, Y-Axis: -57.27, Z-Axis: 91.54[0m
+[0;32mI (8914) MPU6050: Temperature:- 30.74[0m
+Reverse Tilt: 3
+[0;32mI (9024) MPU6050: Acceleration:-  X-Axis: -0.28, Y-Axis: 0.99, Z-Axis: -0.04[0m
+[0;32mI (9024) MPU6050: Gyroscope:- X-Axis: 110.58, Y-Axis: -11.00, Z-Axis: 95.92[0m
+[0;32mI (9024) MPU6050: Temperature:- 30.79[0m
+Reverse Tilt: 3
+[0;32mI (9134) MPU6050: Acceleration:-  X-Axis: -0.16, Y-Axis: 0.99, Z-Axis: -0.19[0m
+[0;32mI (9134) MPU6050: Gyroscope:- X-Axis: 26.85, Y-Axis: -49.25, Z-Axis: 15.86[0m
+[0;32mI (9134) MPU6050: Temperature:- 30.79[0m
+Reverse Tilt: 3
+[0;32mI (9244) MPU6050: Acceleration:-  X-Axis: -0.08, Y-Axis: 0.91, Z-Axis: -0.20[0m
+[0;32mI (9244) MPU6050: Gyroscope:- X-Axis: 8.73, Y-Axis: -29.11, Z-Axis: 19.25[0m
+[0;32mI (9244) MPU6050: Temperature:- 30.74[0m
+Reverse Tilt: 3
+[0;32mI (9354) MPU6050: Acceleration:-  X-Axis: -0.10, Y-Axis: 1.08, Z-Axis: -0.17[0m
+[0;32mI (9354) MPU6050: Gyroscope:- X-Axis: -40.43, Y-Axis: -13.18, Z-Axis: 8.53[0m
+[0;32mI (9354) MPU6050: Temperature:- 30.88[0m
+Reverse Tilt: 3
+[0;32mI (9464) MPU6050: Acceleration:-  X-Axis: -0.05, Y-Axis: 0.92, Z-Axis: -0.10[0m
+[0;32mI (9464) MPU6050: Gyroscope:- X-Axis: 9.27, Y-Axis: -3.73, Z-Axis: 3.83[0m
+[0;32mI (9464) MPU6050: Temperature:- 30.79[0m
+Reverse Tilt: 3
+[0;32mI (9564) MPU6050: Acceleration:-  X-Axis: -0.01, Y-Axis: 1.02, Z-Axis: -0.17[0m
+[0;32mI (9564) MPU6050: Gyroscope:- X-Axis: -9.02, Y-Axis: 0.66, Z-Axis: -0.82[0m
+[0;32mI (9564) MPU6050: Temperature:- 30.79[0m
+Reverse Tilt: 3
+[0;32mI (9674) MPU6050: Acceleration:-  X-Axis: -0.06, Y-Axis: 1.00, Z-Axis: -0.14[0m
+[0;32mI (9674) MPU6050: Gyroscope:- X-Axis: 0.37, Y-Axis: -10.93, Z-Axis: 3.87[0m
+[0;32mI (9674) MPU6050: Temperature:- 30.84[0m
+Reverse Tilt: 3
+[0;32mI (9784) MPU6050: Acceleration:-  X-Axis: -0.15, Y-Axis: 0.99, Z-Axis: -0.14[0m
+[0;32mI (9784) MPU6050: Gyroscope:- X-Axis: -6.80, Y-Axis: -13.67, Z-Axis: -8.69[0m
+[0;32mI (9784) MPU6050: Temperature:- 30.79[0m
+Reverse Tilt: 3
+[0;32mI (9894) MPU6050: Acceleration:-  X-Axis: -0.07, Y-Axis: 0.96, Z-Axis: -0.15[0m
+[0;32mI (9894) MPU6050: Gyroscope:- X-Axis: -0.86, Y-Axis: -2.03, Z-Axis: 3.34[0m
+[0;32mI (9894) MPU6050: Temperature:- 30.79[0m
+Reverse Tilt: 3
+[0;32mI (10004) MPU6050: Acceleration:-  X-Axis: -0.11, Y-Axis: 1.03, Z-Axis: -0.09[0m
+[0;32mI (10004) MPU6050: Gyroscope:- X-Axis: -10.85, Y-Axis: -7.28, Z-Axis: -0.10[0m
+[0;32mI (10004) MPU6050: Temperature:- 30.84[0m
+Reverse Tilt: 3
+[0;32mI (10114) MPU6050: Acceleration:-  X-Axis: -0.06, Y-Axis: 0.99, Z-Axis: -0.10[0m
+[0;32mI (10114) MPU6050: Gyroscope:- X-Axis: 2.81, Y-Axis: -5.71, Z-Axis: 2.75[0m
+[0;32mI (10114) MPU6050: Temperature:- 30.79[0m
+Reverse Tilt: 3
+[0;32mI (10224) MPU6050: Acceleration:-  X-Axis: -0.09, Y-Axis: 0.96, Z-Axis: -0.11[0m
+[0;32mI (10224) MPU6050: Gyroscope:- X-Axis: -8.08, Y-Axis: -1.73, Z-Axis: 7.07[0m
+[0;32mI (10224) MPU6050: Temperature:- 30.84[0m
+Reverse Tilt: 3
+[0;32mI (10334) MPU6050: Acceleration:-  X-Axis: -0.08, Y-Axis: 0.97, Z-Axis: -0.18[0m
+[0;32mI (10334) MPU6050: Gyroscope:- X-Axis: 8.69, Y-Axis: 0.56, Z-Axis: 0.69[0m
+[0;32mI (10334) MPU6050: Temperature:- 30.74[0m
+Reverse Tilt: 3
+[0;32mI (10444) MPU6050: Acceleration:-  X-Axis: -0.10, Y-Axis: 0.92, Z-Axis: -0.14[0m
+[0;32mI (10444) MPU6050: Gyroscope:- X-Axis: -17.57, Y-Axis: 42.15, Z-Axis: -14.05[0m
+[0;32mI (10444) MPU6050: Temperature:- 30.79[0m
+Reverse Tilt: 3
+[0;32mI (10554) MPU6050: Acceleration:-  X-Axis: -0.08, Y-Axis: 1.17, Z-Axis: -0.12[0m
+[0;32mI (10554) MPU6050: Gyroscope:- X-Axis: -59.21, Y-Axis: 11.34, Z-Axis: 14.83[0m
+[0;32mI (10554) MPU6050: Temperature:- 30.74[0m
+Reverse Tilt: 3
+[0;32mI (10664) MPU6050: Acceleration:-  X-Axis: -0.48, Y-Axis: 1.16, Z-Axis: -0.12[0m
+[0;32mI (10664) MPU6050: Gyroscope:- X-Axis: -0.73, Y-Axis: -24.08, Z-Axis: -16.18[0m
+[0;32mI (10664) MPU6050: Temperature:- 30.84[0m
+Reverse Tilt: 3
+[0;32mI (10774) MPU6050: Acceleration:-  X-Axis: 0.03, Y-Axis: 0.80, Z-Axis: 0.02[0m
+[0;32mI (10774) MPU6050: Gyroscope:- X-Axis: 25.82, Y-Axis: -84.88, Z-Axis: 101.60[0m
+[0;32mI (10774) MPU6050: Temperature:- 30.79[0m
+Reverse Tilt: 3
+[0;32mI (10884) MPU6050: Acceleration:-  X-Axis: -0.15, Y-Axis: 1.05, Z-Axis: -0.06[0m
+[0;32mI (10884) MPU6050: Gyroscope:- X-Axis: -23.92, Y-Axis: -141.97, Z-Axis: 21.89[0m
+[0;32mI (10884) MPU6050: Temperature:- 30.84[0m
+Reverse Tilt: 3
+[0;32mI (10994) MPU6050: Acceleration:-  X-Axis: -0.16, Y-Axis: 0.98, Z-Axis: -0.13[0m
+[0;32mI (10994) MPU6050: Gyroscope:- X-Axis: -21.53, Y-Axis: 4.23, Z-Axis: -1.78[0m
+[0;32mI (10994) MPU6050: Temperature:- 30.88[0m
+Reverse Tilt: 3
+[0;32mI (11104) MPU6050: Acceleration:-  X-Axis: -0.07, Y-Axis: 0.99, Z-Axis: -0.16[0m
+[0;32mI (11104) MPU6050: Gyroscope:- X-Axis: -19.00, Y-Axis: -19.61, Z-Axis: -51.83[0m
+[0;32mI (11104) MPU6050: Temperature:- 30.79[0m
+Reverse Tilt: 3
+[0;32mI (11214) MPU6050: Acceleration:-  X-Axis: -0.06, Y-Axis: 1.08, Z-Axis: 0.03[0m
+[0;32mI (11214) MPU6050: Gyroscope:- X-Axis: 28.94, Y-Axis: -91.31, Z-Axis: 44.62[0m
+[0;32mI (11214) MPU6050: Temperature:- 30.84[0m
+Reverse Tilt: 3
+[0;32mI (11324) MPU6050: Acceleration:-  X-Axis: 0.25, Y-Axis: 0.84, Z-Axis: 0.07[0m
+[0;32mI (11324) MPU6050: Gyroscope:- X-Axis: 45.09, Y-Axis: 64.56, Z-Axis: 33.13[0m
+[0;32mI (11324) MPU6050: Temperature:- 30.69[0m
+Reverse Tilt: 3
+[0;32mI (11434) MPU6050: Acceleration:-  X-Axis: 0.10, Y-Axis: 0.99, Z-Axis: -0.05[0m
+[0;32mI (11434) MPU6050: Gyroscope:- X-Axis: 12.42, Y-Axis: 36.24, Z-Axis: -19.17[0m
+[0;32mI (11434) MPU6050: Temperature:- 30.88[0m
+Reverse Tilt: 3
+[0;32mI (11544) MPU6050: Acceleration:-  X-Axis: 0.02, Y-Axis: 1.07, Z-Axis: 0.03[0m
+[0;32mI (11544) MPU6050: Gyroscope:- X-Axis: -27.72, Y-Axis: 6.24, Z-Axis: 7.08[0m
+[0;32mI (11544) MPU6050: Temperature:- 30.79[0m
+Reverse Tilt: 3
+[0;32mI (11654) MPU6050: Acceleration:-  X-Axis: 0.06, Y-Axis: 0.93, Z-Axis: -0.01[0m
+[0;32mI (11654) MPU6050: Gyroscope:- X-Axis: -28.52, Y-Axis: 7.34, Z-Axis: 7.39[0m
+[0;32mI (11654) MPU6050: Temperature:- 30.88[0m
+Reverse Tilt: 3
+[0;32mI (11764) MPU6050: Acceleration:-  X-Axis: 0.09, Y-Axis: 1.00, Z-Axis: 0.03[0m
+[0;32mI (11764) MPU6050: Gyroscope:- X-Axis: 15.94, Y-Axis: 18.56, Z-Axis: -12.10[0m
+[0;32mI (11764) MPU6050: Temperature:- 30.84[0m
+Reverse Tilt: 3
+[0;32mI (11874) MPU6050: Acceleration:-  X-Axis: 0.09, Y-Axis: 0.94, Z-Axis: -0.06[0m
+[0;32mI (11874) MPU6050: Gyroscope:- X-Axis: 4.80, Y-Axis: 2.63, Z-Axis: -5.48[0m
+[0;32mI (11874) MPU6050: Temperature:- 30.88[0m
+Reverse Tilt: 3
+[0;32mI (11984) MPU6050: Acceleration:-  X-Axis: 0.06, Y-Axis: 0.99, Z-Axis: -0.02[0m
+[0;32mI (11984) MPU6050: Gyroscope:- X-Axis: 5.63, Y-Axis: -0.02, Z-Axis: -3.21[0m
+[0;32mI (11984) MPU6050: Temperature:- 30.79[0m
+Reverse Tilt: 3
+[0;32mI (12094) MPU6050: Acceleration:-  X-Axis: 0.04, Y-Axis: 0.97, Z-Axis: 0.00[0m
+[0;32mI (12094) MPU6050: Gyroscope:- X-Axis: -9.81, Y-Axis: -3.00, Z-Axis: 1.73[0m
+[0;32mI (12094) MPU6050: Temperature:- 30.84[0m
+Reverse Tilt: 3
+[0;32mI (12204) MPU6050: Acceleration:-  X-Axis: 0.03, Y-Axis: 0.98, Z-Axis: 0.02[0m
+[0;32mI (12204) MPU6050: Gyroscope:- X-Axis: 8.17, Y-Axis: -1.88, Z-Axis: -6.96[0m
+[0;32mI (12204) MPU6050: Temperature:- 30.88[0m
+Reverse Tilt: 3
+[0;32mI (12314) MPU6050: Acceleration:-  X-Axis: 0.05, Y-Axis: 1.00, Z-Axis: -0.02[0m
+[0;32mI (12314) MPU6050: Gyroscope:- X-Axis: 12.72, Y-Axis: 3.18, Z-Axis: -4.79[0m
+[0;32mI (12314) MPU6050: Temperature:- 30.79[0m
+Reverse Tilt: 3
+[0;32mI (12424) MPU6050: Acceleration:-  X-Axis: 0.04, Y-Axis: 0.97, Z-Axis: -0.07[0m
+[0;32mI (12424) MPU6050: Gyroscope:- X-Axis: -1.15, Y-Axis: 4.17, Z-Axis: 1.85[0m
+[0;32mI (12424) MPU6050: Temperature:- 30.84[0m
+Reverse Tilt: 3
+[0;32mI (12534) MPU6050: Acceleration:-  X-Axis: 0.08, Y-Axis: 0.96, Z-Axis: -0.06[0m
+[0;32mI (12534) MPU6050: Gyroscope:- X-Axis: 0.13, Y-Axis: 7.73, Z-Axis: 11.15[0m
+[0;32mI (12534) MPU6050: Temperature:- 30.88[0m
+Reverse Tilt: 3
+[0;32mI (12644) MPU6050: Acceleration:-  X-Axis: 0.03, Y-Axis: 1.01, Z-Axis: -0.08[0m
+[0;32mI (12644) MPU6050: Gyroscope:- X-Axis: 2.89, Y-Axis: -2.16, Z-Axis: -4.29[0m
+[0;32mI (12644) MPU6050: Temperature:- 30.93[0m
+Reverse Tilt: 3
+[0;32mI (12754) MPU6050: Acceleration:-  X-Axis: 0.03, Y-Axis: 1.01, Z-Axis: -0.06[0m
+[0;32mI (12754) MPU6050: Gyroscope:- X-Axis: 0.11, Y-Axis: 0.53, Z-Axis: -2.16[0m
+[0;32mI (12754) MPU6050: Temperature:- 30.84[0m
+Reverse Tilt: 3
+[0;32mI (12864) MPU6050: Acceleration:-  X-Axis: 0.05, Y-Axis: 0.96, Z-Axis: -0.02[0m
+[0;32mI (12864) MPU6050: Gyroscope:- X-Axis: 1.30, Y-Axis: 4.01, Z-Axis: 4.24[0m
+[0;32mI (12864) MPU6050: Temperature:- 30.79[0m
+Reverse Tilt: 3
+[0;32mI (12974) MPU6050: Acceleration:-  X-Axis: 0.04, Y-Axis: 0.96, Z-Axis: -0.04[0m
+[0;32mI (12974) MPU6050: Gyroscope:- X-Axis: 0.31, Y-Axis: 1.68, Z-Axis: -2.57[0m
+[0;32mI (12974) MPU6050: Temperature:- 30.84[0m
+Reverse Tilt: 3
+[0;32mI (13084) MPU6050: Acceleration:-  X-Axis: 0.03, Y-Axis: 1.00, Z-Axis: -0.05[0m
+[0;32mI (13084) MPU6050: Gyroscope:- X-Axis: -1.60, Y-Axis: 2.18, Z-Axis: -0.09[0m
+[0;32mI (13084) MPU6050: Temperature:- 30.79[0m
+Reverse Tilt: 3
+[0;32mI (13194) MPU6050: Acceleration:-  X-Axis: 0.01, Y-Axis: 0.98, Z-Axis: -0.05[0m
+[0;32mI (13194) MPU6050: Gyroscope:- X-Axis: -0.31, Y-Axis: -0.77, Z-Axis: 2.88[0m
+[0;32mI (13194) MPU6050: Temperature:- 30.88[0m
+Reverse Tilt: 3
+[0;32mI (13304) MPU6050: Acceleration:-  X-Axis: 0.02, Y-Axis: 1.00, Z-Axis: -0.05[0m
+[0;32mI (13304) MPU6050: Gyroscope:- X-Axis: -9.66, Y-Axis: -4.11, Z-Axis: -2.19[0m
+[0;32mI (13304) MPU6050: Temperature:- 30.84[0m
+Reverse Tilt: 3
+[0;32mI (13414) MPU6050: Acceleration:-  X-Axis: 0.18, Y-Axis: 1.02, Z-Axis: 0.14[0m
+[0;32mI (13414) MPU6050: Gyroscope:- X-Axis: -19.74, Y-Axis: -24.02, Z-Axis: 12.54[0m
+[0;32mI (13414) MPU6050: Temperature:- 30.79[0m
+Reverse Tilt: 3
+[0;32mI (13524) MPU6050: Acceleration:-  X-Axis: 0.06, Y-Axis: 0.96, Z-Axis: 0.07[0m
+[0;32mI (13524) MPU6050: Gyroscope:- X-Axis: -53.94, Y-Axis: -19.70, Z-Axis: 17.21[0m
+[0;32mI (13524) MPU6050: Temperature:- 30.84[0m
+Reverse Tilt: 3
+[0;32mI (13634) MPU6050: Acceleration:-  X-Axis: 0.18, Y-Axis: 0.97, Z-Axis: 0.20[0m
+[0;32mI (13634) MPU6050: Gyroscope:- X-Axis: -83.74, Y-Axis: -8.08, Z-Axis: 34.76[0m
+[0;32mI (13634) MPU6050: Temperature:- 30.88[0m
+Reverse Tilt: 3
+[0;32mI (13744) MPU6050: Acceleration:-  X-Axis: 0.17, Y-Axis: 0.93, Z-Axis: 0.29[0m
+[0;32mI (13744) MPU6050: Gyroscope:- X-Axis: -107.51, Y-Axis: -14.05, Z-Axis: 8.80[0m
+[0;32mI (13744) MPU6050: Temperature:- 30.88[0m
+Reverse Tilt: 3
+[0;32mI (13854) MPU6050: Acceleration:-  X-Axis: 0.21, Y-Axis: 0.76, Z-Axis: 0.56[0m
+[0;32mI (13854) MPU6050: Gyroscope:- X-Axis: -70.25, Y-Axis: 4.41, Z-Axis: 8.47[0m
+[0;32mI (13854) MPU6050: Temperature:- 30.93[0m
+Reverse Tilt: 3
+[0;32mI (13964) MPU6050: Acceleration:-  X-Axis: 0.18, Y-Axis: 0.66, Z-Axis: 0.53[0m
+[0;32mI (13964) MPU6050: Gyroscope:- X-Axis: -71.88, Y-Axis: 5.73, Z-Axis: 2.61[0m
+[0;32mI (13964) MPU6050: Temperature:- 30.88[0m
+Reverse Tilt: 3
+[0;32mI (14074) MPU6050: Acceleration:-  X-Axis: 0.15, Y-Axis: 0.65, Z-Axis: 0.69[0m
+[0;32mI (14074) MPU6050: Gyroscope:- X-Axis: -88.56, Y-Axis: -1.09, Z-Axis: 1.31[0m
+[0;32mI (14074) MPU6050: Temperature:- 30.84[0m
+Reverse Tilt: 3
+[0;32mI (14184) MPU6050: Acceleration:-  X-Axis: 0.21, Y-Axis: 0.50, Z-Axis: 0.82[0m
+[0;32mI (14184) MPU6050: Gyroscope:- X-Axis: -49.68, Y-Axis: -63.15, Z-Axis: 27.65[0m
+[0;32mI (14184) MPU6050: Temperature:- 30.84[0m
+Reverse Tilt: 3
+[0;32mI (14294) MPU6050: Acceleration:-  X-Axis: 0.35, Y-Axis: 0.28, Z-Axis: 0.69[0m
+[0;32mI (14294) MPU6050: Gyroscope:- X-Axis: -55.56, Y-Axis: -49.86, Z-Axis: 66.23[0m
+[0;32mI (14294) MPU6050: Temperature:- 30.88[0m
+[0;32mI (14394) MPU6050: Acceleration:-  X-Axis: 0.65, Y-Axis: 0.35, Z-Axis: 0.73[0m
+[0;32mI (14394) MPU6050: Gyroscope:- X-Axis: -67.73, Y-Axis: -17.69, Z-Axis: 56.34[0m
+[0;32mI (14394) MPU6050: Temperature:- 30.88[0m
+Device Left Tilt: 1
+[0;32mI (14504) MPU6050: Acceleration:-  X-Axis: 0.63, Y-Axis: 0.19, Z-Axis: 0.90[0m
+[0;32mI (14504) MPU6050: Gyroscope:- X-Axis: -49.20, Y-Axis: 7.28, Z-Axis: 27.71[0m
+[0;32mI (14504) MPU6050: Temperature:- 30.74[0m
+Device Left Tilt: 1
+[0;32mI (14614) MPU6050: Acceleration:-  X-Axis: 0.52, Y-Axis: 0.06, Z-Axis: 0.81[0m
+[0;32mI (14614) MPU6050: Gyroscope:- X-Axis: -37.26, Y-Axis: 1.35, Z-Axis: 20.40[0m
+[0;32mI (14614) MPU6050: Temperature:- 30.98[0m
+Device Left Tilt: 1
+[0;32mI (14724) MPU6050: Acceleration:-  X-Axis: 0.41, Y-Axis: -0.15, Z-Axis: 0.87[0m
+[0;32mI (14724) MPU6050: Gyroscope:- X-Axis: -41.30, Y-Axis: -4.54, Z-Axis: 0.23[0m
+[0;32mI (14724) MPU6050: Temperature:- 30.93[0m
+[0;32mI (14824) MPU6050: Acceleration:-  X-Axis: 0.53, Y-Axis: -0.02, Z-Axis: 0.71[0m
+[0;32mI (14824) MPU6050: Gyroscope:- X-Axis: -44.63, Y-Axis: 2.73, Z-Axis: 3.58[0m
+[0;32mI (14824) MPU6050: Temperature:- 30.84[0m
+Device Left Tilt: 1
+[0;32mI (14934) MPU6050: Acceleration:-  X-Axis: 0.44, Y-Axis: -0.23, Z-Axis: 0.91[0m
+[0;32mI (14934) MPU6050: Gyroscope:- X-Axis: -24.95, Y-Axis: 26.03, Z-Axis: 34.34[0m
+[0;32mI (14934) MPU6050: Temperature:- 30.88[0m
+[0;32mI (15034) MPU6050: Acceleration:-  X-Axis: 0.26, Y-Axis: -0.39, Z-Axis: 0.88[0m
+[0;32mI (15034) MPU6050: Gyroscope:- X-Axis: -50.09, Y-Axis: 23.96, Z-Axis: -24.69[0m
+[0;32mI (15034) MPU6050: Temperature:- 30.84[0m
+[0;32mI (15134) MPU6050: Acceleration:-  X-Axis: 0.31, Y-Axis: -0.41, Z-Axis: 0.76[0m
+[0;32mI (15134) MPU6050: Gyroscope:- X-Axis: -34.11, Y-Axis: 31.63, Z-Axis: -20.39[0m
+[0;32mI (15134) MPU6050: Temperature:- 30.88[0m
+[0;32mI (15234) MPU6050: Acceleration:-  X-Axis: 0.29, Y-Axis: -0.34, Z-Axis: 0.55[0m
+[0;32mI (15234) MPU6050: Gyroscope:- X-Axis: -57.98, Y-Axis: 43.33, Z-Axis: -14.81[0m
+[0;32mI (15234) MPU6050: Temperature:- 30.93[0m
+[0;32mI (15334) MPU6050: Acceleration:-  X-Axis: 0.23, Y-Axis: -0.47, Z-Axis: 0.77[0m
+[0;32mI (15334) MPU6050: Gyroscope:- X-Axis: -12.37, Y-Axis: 39.53, Z-Axis: -14.41[0m
+[0;32mI (15334) MPU6050: Temperature:- 30.84[0m
+[0;32mI (15434) MPU6050: Acceleration:-  X-Axis: 0.22, Y-Axis: -0.48, Z-Axis: 0.81[0m
+[0;32mI (15434) MPU6050: Gyroscope:- X-Axis: -63.15, Y-Axis: 48.08, Z-Axis: -37.59[0m
+[0;32mI (15434) MPU6050: Temperature:- 30.93[0m
+[0;32mI (15534) MPU6050: Acceleration:-  X-Axis: 0.31, Y-Axis: -0.57, Z-Axis: 0.72[0m
+[0;32mI (15534) MPU6050: Gyroscope:- X-Axis: -30.24, Y-Axis: 9.75, Z-Axis: 5.39[0m
+[0;32mI (15534) MPU6050: Temperature:- 30.84[0m
+Forward Tilt: 4
+[0;32mI (15644) MPU6050: Acceleration:-  X-Axis: 0.14, Y-Axis: -0.62, Z-Axis: 0.77[0m
+[0;32mI (15644) MPU6050: Gyroscope:- X-Axis: -46.03, Y-Axis: 4.62, Z-Axis: 12.35[0m
+[0;32mI (15644) MPU6050: Temperature:- 30.84[0m
+Forward Tilt: 4
+[0;32mI (15754) MPU6050: Acceleration:-  X-Axis: 0.20, Y-Axis: -0.66, Z-Axis: 0.63[0m
+[0;32mI (15754) MPU6050: Gyroscope:- X-Axis: 7.72, Y-Axis: 6.91, Z-Axis: 2.32[0m
+[0;32mI (15754) MPU6050: Temperature:- 30.98[0m
+Forward Tilt: 4
+[0;32mI (15864) MPU6050: Acceleration:-  X-Axis: 0.22, Y-Axis: -0.62, Z-Axis: 0.52[0m
+[0;32mI (15864) MPU6050: Gyroscope:- X-Axis: 35.38, Y-Axis: -10.66, Z-Axis: 6.31[0m
+[0;32mI (15864) MPU6050: Temperature:- 30.74[0m
+Forward Tilt: 4
+[0;32mI (15974) MPU6050: Acceleration:-  X-Axis: 0.25, Y-Axis: -0.31, Z-Axis: 1.06[0m
+[0;32mI (15974) MPU6050: Gyroscope:- X-Axis: 250.13, Y-Axis: 2.52, Z-Axis: 35.60[0m
+[0;32mI (15974) MPU6050: Temperature:- 30.88[0m
+[0;32mI (16074) MPU6050: Acceleration:-  X-Axis: 0.05, Y-Axis: -0.05, Z-Axis: 0.90[0m
+[0;32mI (16074) MPU6050: Gyroscope:- X-Axis: 81.51, Y-Axis: -12.69, Z-Axis: 7.72[0m
+[0;32mI (16074) MPU6050: Temperature:- 30.93[0m
+[0;32mI (16174) MPU6050: Acceleration:-  X-Axis: 0.15, Y-Axis: 0.07, Z-Axis: 0.89[0m
+[0;32mI (16174) MPU6050: Gyroscope:- X-Axis: 50.92, Y-Axis: 1.39, Z-Axis: 1.34[0m
+[0;32mI (16174) MPU6050: Temperature:- 30.84[0m
+[0;32mI (16274) MPU6050: Acceleration:-  X-Axis: 0.22, Y-Axis: 0.15, Z-Axis: 0.90[0m
+[0;32mI (16274) MPU6050: Gyroscope:- X-Axis: 21.84, Y-Axis: -4.45, Z-Axis: 5.25[0m
+[0;32mI (16274) MPU6050: Temperature:- 30.84[0m
+[0;32mI (16374) MPU6050: Acceleration:-  X-Axis: 0.15, Y-Axis: 0.10, Z-Axis: 0.99[0m
+[0;32mI (16374) MPU6050: Gyroscope:- X-Axis: 12.45, Y-Axis: -3.65, Z-Axis: -0.63[0m
+[0;32mI (16374) MPU6050: Temperature:- 30.84[0m
+[0;32mI (16474) MPU6050: Acceleration:-  X-Axis: 0.21, Y-Axis: 0.19, Z-Axis: 0.91[0m
+[0;32mI (16474) MPU6050: Gyroscope:- X-Axis: 28.95, Y-Axis: 11.40, Z-Axis: -2.54[0m
+[0;32mI (16474) MPU6050: Temperature:- 30.84[0m
+[0;32mI (16574) MPU6050: Acceleration:-  X-Axis: 0.19, Y-Axis: 0.23, Z-Axis: 0.92[0m
+[0;32mI (16574) MPU6050: Gyroscope:- X-Axis: 19.77, Y-Axis: -3.90, Z-Axis: 3.41[0m
+[0;32mI (16574) MPU6050: Temperature:- 30.93[0m
+[0;32mI (16674) MPU6050: Acceleration:-  X-Axis: 0.16, Y-Axis: 0.19, Z-Axis: 0.84[0m
+[0;32mI (16674) MPU6050: Gyroscope:- X-Axis: 6.58, Y-Axis: -11.19, Z-Axis: 3.40[0m
+[0;32mI (16674) MPU6050: Temperature:- 30.84[0m
+[0;32mI (16774) MPU6050: Acceleration:-  X-Axis: 0.18, Y-Axis: 0.24, Z-Axis: 0.94[0m
+[0;32mI (16774) MPU6050: Gyroscope:- X-Axis: 17.08, Y-Axis: 14.63, Z-Axis: -2.45[0m
+[0;32mI (16774) MPU6050: Temperature:- 30.93[0m
+[0;32mI (16874) MPU6050: Acceleration:-  X-Axis: 0.20, Y-Axis: 0.30, Z-Axis: 0.82[0m
+[0;32mI (16874) MPU6050: Gyroscope:- X-Axis: 9.04, Y-Axis: -0.47, Z-Axis: 3.23[0m
+[0;32mI (16874) MPU6050: Temperature:- 30.84[0m
+[0;32mI (16974) MPU6050: Acceleration:-  X-Axis: 0.17, Y-Axis: 0.25, Z-Axis: 0.82[0m
+[0;32mI (16974) MPU6050: Gyroscope:- X-Axis: -5.08, Y-Axis: -6.79, Z-Axis: 2.98[0m
+[0;32mI (16974) MPU6050: Temperature:- 30.93[0m
+[0;32mI (17074) MPU6050: Acceleration:-  X-Axis: 0.19, Y-Axis: 0.29, Z-Axis: 0.84[0m
+[0;32mI (17074) MPU6050: Gyroscope:- X-Axis: -2.54, Y-Axis: 3.46, Z-Axis: -11.66[0m
+[0;32mI (17074) MPU6050: Temperature:- 30.93[0m
+[0;32mI (17174) MPU6050: Acceleration:-  X-Axis: 0.16, Y-Axis: 0.29, Z-Axis: 0.89[0m
+[0;32mI (17174) MPU6050: Gyroscope:- X-Axis: 15.54, Y-Axis: 1.12, Z-Axis: -0.05[0m
+[0;32mI (17174) MPU6050: Temperature:- 30.79[0m
+[0;32mI (17274) MPU6050: Acceleration:-  X-Axis: 0.16, Y-Axis: 0.30, Z-Axis: 0.80[0m
+[0;32mI (17274) MPU6050: Gyroscope:- X-Axis: 18.23, Y-Axis: -1.23, Z-Axis: 1.05[0m
+[0;32mI (17274) MPU6050: Temperature:- 30.88[0m
+[0;32mI (17374) MPU6050: Acceleration:-  X-Axis: 0.16, Y-Axis: 0.37, Z-Axis: 0.77[0m
+[0;32mI (17374) MPU6050: Gyroscope:- X-Axis: 48.36, Y-Axis: 7.73, Z-Axis: -0.20[0m
+[0;32mI (17374) MPU6050: Temperature:- 30.79[0m
+[0;32mI (17474) MPU6050: Acceleration:-  X-Axis: 0.09, Y-Axis: 0.54, Z-Axis: 0.82[0m
+[0;32mI (17474) MPU6050: Gyroscope:- X-Axis: 99.13, Y-Axis: 23.04, Z-Axis: -29.82[0m
+[0;32mI (17474) MPU6050: Temperature:- 30.88[0m
+Reverse Tilt: 3
+[0;32mI (17584) MPU6050: Acceleration:-  X-Axis: 0.02, Y-Axis: 0.82, Z-Axis: 0.41[0m
+[0;32mI (17584) MPU6050: Gyroscope:- X-Axis: 169.19, Y-Axis: 14.13, Z-Axis: -12.46[0m
+[0;32mI (17584) MPU6050: Temperature:- 30.84[0m
+Reverse Tilt: 3
+[0;32mI (17694) MPU6050: Acceleration:-  X-Axis: 0.02, Y-Axis: 0.96, Z-Axis: 0.25[0m
+[0;32mI (17694) MPU6050: Gyroscope:- X-Axis: 166.35, Y-Axis: 14.58, Z-Axis: -71.37[0m
+[0;32mI (17694) MPU6050: Temperature:- 30.84[0m
+Reverse Tilt: 3
+[0;32mI (17804) MPU6050: Acceleration:-  X-Axis: -0.00, Y-Axis: 1.05, Z-Axis: -0.02[0m
+[0;32mI (17804) MPU6050: Gyroscope:- X-Axis: 92.15, Y-Axis: -34.79, Z-Axis: -11.62[0m
+[0;32mI (17804) MPU6050: Temperature:- 30.88[0m
+Reverse Tilt: 3
+[0;32mI (17914) MPU6050: Acceleration:-  X-Axis: -0.08, Y-Axis: 0.94, Z-Axis: 0.05[0m
+[0;32mI (17914) MPU6050: Gyroscope:- X-Axis: 4.48, Y-Axis: -34.85, Z-Axis: 14.56[0m
+[0;32mI (17914) MPU6050: Temperature:- 30.84[0m
+Reverse Tilt: 3
+[0;32mI (18024) MPU6050: Acceleration:-  X-Axis: -0.07, Y-Axis: 1.09, Z-Axis: 0.12[0m
+[0;32mI (18024) MPU6050: Gyroscope:- X-Axis: -193.40, Y-Axis: -28.44, Z-Axis: 22.39[0m
+[0;32mI (18024) MPU6050: Temperature:- 30.84[0m
+Reverse Tilt: 3
+[0;32mI (18134) MPU6050: Acceleration:-  X-Axis: 0.04, Y-Axis: 0.79, Z-Axis: 0.28[0m
+[0;32mI (18134) MPU6050: Gyroscope:- X-Axis: -93.69, Y-Axis: 64.67, Z-Axis: 34.12[0m
+[0;32mI (18134) MPU6050: Temperature:- 30.88[0m
+Reverse Tilt: 3
+[0;32mI (18244) MPU6050: Acceleration:-  X-Axis: 0.01, Y-Axis: 0.76, Z-Axis: 0.47[0m
+[0;32mI (18244) MPU6050: Gyroscope:- X-Axis: -28.13, Y-Axis: 1.90, Z-Axis: -7.97[0m
+[0;32mI (18244) MPU6050: Temperature:- 30.93[0m
+Reverse Tilt: 3
+[0;32mI (18354) MPU6050: Acceleration:-  X-Axis: 0.06, Y-Axis: 0.80, Z-Axis: 0.65[0m
+[0;32mI (18354) MPU6050: Gyroscope:- X-Axis: -38.97, Y-Axis: -0.11, Z-Axis: 1.63[0m
+[0;32mI (18354) MPU6050: Temperature:- 30.88[0m
+Reverse Tilt: 3
+[0;32mI (18464) MPU6050: Acceleration:-  X-Axis: 0.04, Y-Axis: 0.68, Z-Axis: 0.55[0m
+[0;32mI (18464) MPU6050: Gyroscope:- X-Axis: -70.39, Y-Axis: -9.98, Z-Axis: 9.35[0m
+[0;32mI (18464) MPU6050: Temperature:- 30.88[0m
+Reverse Tilt: 3
+[0;32mI (18574) MPU6050: Acceleration:-  X-Axis: 0.07, Y-Axis: 0.63, Z-Axis: 0.69[0m
+[0;32mI (18574) MPU6050: Gyroscope:- X-Axis: -1.56, Y-Axis: 3.87, Z-Axis: -4.74[0m
+[0;32mI (18574) MPU6050: Temperature:- 30.93[0m
+Reverse Tilt: 3
+[0;32mI (18684) MPU6050: Acceleration:-  X-Axis: 0.08, Y-Axis: 0.60, Z-Axis: 0.69[0m
+[0;32mI (18684) MPU6050: Gyroscope:- X-Axis: -40.60, Y-Axis: -4.22, Z-Axis: 0.37[0m
+[0;32mI (18684) MPU6050: Temperature:- 30.88[0m
+Reverse Tilt: 3
+[0;32mI (18794) MPU6050: Acceleration:-  X-Axis: 0.05, Y-Axis: 0.52, Z-Axis: 0.66[0m
+[0;32mI (18794) MPU6050: Gyroscope:- X-Axis: -23.22, Y-Axis: 0.72, Z-Axis: -3.11[0m
+[0;32mI (18794) MPU6050: Temperature:- 30.84[0m
+Reverse Tilt: 3
+[0;32mI (18904) MPU6050: Acceleration:-  X-Axis: -0.01, Y-Axis: 0.45, Z-Axis: 0.89[0m
+[0;32mI (18904) MPU6050: Gyroscope:- X-Axis: -64.13, Y-Axis: 19.24, Z-Axis: -16.35[0m
+[0;32mI (18904) MPU6050: Temperature:- 30.88[0m
+[0;32mI (19004) MPU6050: Acceleration:-  X-Axis: 0.07, Y-Axis: 0.40, Z-Axis: 0.89[0m
+[0;32mI (19004) MPU6050: Gyroscope:- X-Axis: -70.25, Y-Axis: -3.12, Z-Axis: 5.60[0m
+[0;32mI (19004) MPU6050: Temperature:- 30.93[0m
+[0;32mI (19104) MPU6050: Acceleration:-  X-Axis: 0.07, Y-Axis: 0.27, Z-Axis: 0.89[0m
+[0;32mI (19104) MPU6050: Gyroscope:- X-Axis: -113.56, Y-Axis: -17.31, Z-Axis: -10.57[0m
+[0;32mI (19104) MPU6050: Temperature:- 30.88[0m
+[0;32mI (19204) MPU6050: Acceleration:-  X-Axis: -0.00, Y-Axis: 0.09, Z-Axis: 0.89[0m
+[0;32mI (19204) MPU6050: Gyroscope:- X-Axis: -51.28, Y-Axis: 1.61, Z-Axis: -13.44[0m
+[0;32mI (19204) MPU6050: Temperature:- 30.93[0m
+[0;32mI (19304) MPU6050: Acceleration:-  X-Axis: -0.03, Y-Axis: -0.09, Z-Axis: 0.91[0m
+[0;32mI (19304) MPU6050: Gyroscope:- X-Axis: -100.69, Y-Axis: -1.94, Z-Axis: -9.03[0m
+[0;32mI (19304) MPU6050: Temperature:- 30.74[0m
+[0;32mI (19404) MPU6050: Acceleration:-  X-Axis: -0.03, Y-Axis: -0.13, Z-Axis: 0.85[0m
+[0;32mI (19404) MPU6050: Gyroscope:- X-Axis: -68.28, Y-Axis: 5.60, Z-Axis: -6.24[0m
+[0;32mI (19404) MPU6050: Temperature:- 30.84[0m
+[0;32mI (19504) MPU6050: Acceleration:-  X-Axis: 0.04, Y-Axis: -0.28, Z-Axis: 1.05[0m
+[0;32mI (19504) MPU6050: Gyroscope:- X-Axis: -26.92, Y-Axis: 4.31, Z-Axis: -3.51[0m
+[0;32mI (19504) MPU6050: Temperature:- 30.93[0m
+[0;32mI (19604) MPU6050: Acceleration:-  X-Axis: 0.05, Y-Axis: -0.40, Z-Axis: 0.85[0m
+[0;32mI (19604) MPU6050: Gyroscope:- X-Axis: -100.02, Y-Axis: -28.53, Z-Axis: -41.53[0m
+[0;32mI (19604) MPU6050: Temperature:- 30.84[0m
+[0;32mI (19704) MPU6050: Acceleration:-  X-Axis: 0.19, Y-Axis: -0.35, Z-Axis: 0.72[0m
+[0;32mI (19704) MPU6050: Gyroscope:- X-Axis: -26.75, Y-Axis: 23.98, Z-Axis: -40.24[0m
+[0;32mI (19704) MPU6050: Temperature:- 30.88[0m
+[0;32mI (19804) MPU6050: Acceleration:-  X-Axis: 0.12, Y-Axis: -0.46, Z-Axis: 0.77[0m
+[0;32mI (19804) MPU6050: Gyroscope:- X-Axis: -13.61, Y-Axis: 8.86, Z-Axis: 7.63[0m
+[0;32mI (19804) MPU6050: Temperature:- 30.88[0m
+[0;32mI (19904) MPU6050: Acceleration:-  X-Axis: 0.14, Y-Axis: -0.51, Z-Axis: 0.76[0m
+[0;32mI (19904) MPU6050: Gyroscope:- X-Axis: 8.28, Y-Axis: -1.50, Z-Axis: 31.76[0m
+[0;32mI (19904) MPU6050: Temperature:- 30.88[0m
+Forward Tilt: 4
+[0;32mI (20014) MPU6050: Acceleration:-  X-Axis: 0.00, Y-Axis: -0.55, Z-Axis: 0.77[0m
+[0;32mI (20014) MPU6050: Gyroscope:- X-Axis: -6.05, Y-Axis: 9.76, Z-Axis: 6.66[0m
+[0;32mI (20014) MPU6050: Temperature:- 30.84[0m
+Forward Tilt: 4
+[0;32mI (20124) MPU6050: Acceleration:-  X-Axis: 0.17, Y-Axis: -0.45, Z-Axis: 0.74[0m
+[0;32mI (20124) MPU6050: Gyroscope:- X-Axis: 4.36, Y-Axis: 0.37, Z-Axis: 3.61[0m
+[0;32mI (20124) MPU6050: Temperature:- 30.79[0m
+[0;32mI (20224) MPU6050: Acceleration:-  X-Axis: 0.02, Y-Axis: -0.56, Z-Axis: 0.75[0m
+[0;32mI (20224) MPU6050: Gyroscope:- X-Axis: -15.81, Y-Axis: -3.52, Z-Axis: 0.08[0m
+[0;32mI (20224) MPU6050: Temperature:- 30.79[0m
+Forward Tilt: 4
+[0;32mI (20334) MPU6050: Acceleration:-  X-Axis: 0.03, Y-Axis: -0.58, Z-Axis: 0.80[0m
+[0;32mI (20334) MPU6050: Gyroscope:- X-Axis: -17.22, Y-Axis: -0.79, Z-Axis: -4.11[0m
+[0;32mI (20334) MPU6050: Temperature:- 31.02[0m
+Forward Tilt: 4
+[0;32mI (20444) MPU6050: Acceleration:-  X-Axis: 0.16, Y-Axis: -0.50, Z-Axis: 0.70[0m
+[0;32mI (20444) MPU6050: Gyroscope:- X-Axis: 1.69, Y-Axis: -7.27, Z-Axis: 9.46[0m
+[0;32mI (20444) MPU6050: Temperature:- 30.88[0m
+[0;32mI (20544) MPU6050: Acceleration:-  X-Axis: 0.07, Y-Axis: -0.58, Z-Axis: 0.70[0m
+[0;32mI (20544) MPU6050: Gyroscope:- X-Axis: 0.66, Y-Axis: 0.02, Z-Axis: -1.78[0m
+[0;32mI (20544) MPU6050: Temperature:- 30.88[0m
+Forward Tilt: 4
+[0;32mI (20654) MPU6050: Acceleration:-  X-Axis: 0.05, Y-Axis: -0.57, Z-Axis: 0.73[0m
+[0;32mI (20654) MPU6050: Gyroscope:- X-Axis: -5.29, Y-Axis: 1.51, Z-Axis: -2.42[0m
+[0;32mI (20654) MPU6050: Temperature:- 30.79[0m
+Forward Tilt: 4
+[0;32mI (20764) MPU6050: Acceleration:-  X-Axis: 0.08, Y-Axis: -0.56, Z-Axis: 0.72[0m
+[0;32mI (20764) MPU6050: Gyroscope:- X-Axis: -11.84, Y-Axis: 3.97, Z-Axis: -2.05[0m
+[0;32mI (20764) MPU6050: Temperature:- 30.84[0m
+Forward Tilt: 4
+[0;32mI (20874) MPU6050: Acceleration:-  X-Axis: 0.00, Y-Axis: -0.61, Z-Axis: 0.79[0m
+[0;32mI (20874) MPU6050: Gyroscope:- X-Axis: 0.12, Y-Axis: -0.47, Z-Axis: 14.82[0m
+[0;32mI (20874) MPU6050: Temperature:- 30.88[0m
+Forward Tilt: 4
+[0;32mI (20984) MPU6050: Acceleration:-  X-Axis: 0.17, Y-Axis: -0.49, Z-Axis: 0.74[0m
+[0;32mI (20984) MPU6050: Gyroscope:- X-Axis: 8.73, Y-Axis: 4.18, Z-Axis: 8.46[0m
+[0;32mI (20984) MPU6050: Temperature:- 30.88[0m
+[0;32mI (21084) MPU6050: Acceleration:-  X-Axis: 0.01, Y-Axis: -0.57, Z-Axis: 0.68[0m
+[0;32mI (21084) MPU6050: Gyroscope:- X-Axis: -2.53, Y-Axis: -0.73, Z-Axis: -6.63[0m
+[0;32mI (21084) MPU6050: Temperature:- 30.88[0m
+Forward Tilt: 4
+[0;32mI (21194) MPU6050: Acceleration:-  X-Axis: 0.06, Y-Axis: -0.51, Z-Axis: 0.72[0m
+[0;32mI (21194) MPU6050: Gyroscope:- X-Axis: -0.94, Y-Axis: 1.53, Z-Axis: -1.53[0m
+[0;32mI (21194) MPU6050: Temperature:- 30.84[0m
+Forward Tilt: 4
+[0;32mI (21304) MPU6050: Acceleration:-  X-Axis: 0.05, Y-Axis: -0.49, Z-Axis: 0.73[0m
+[0;32mI (21304) MPU6050: Gyroscope:- X-Axis: -10.82, Y-Axis: 0.59, Z-Axis: -4.55[0m
+[0;32mI (21304) MPU6050: Temperature:- 30.88[0m
+[0;32mI (21404) MPU6050: Acceleration:-  X-Axis: -0.30, Y-Axis: -0.59, Z-Axis: 0.50[0m
+[0;32mI (21404) MPU6050: Gyroscope:- X-Axis: -1.68, Y-Axis: 4.11, Z-Axis: -8.60[0m
+[0;32mI (21404) MPU6050: Temperature:- 30.79[0m
+Forward Tilt: 4
+[0;32mI (21514) MPU6050: Acceleration:-  X-Axis: 0.04, Y-Axis: -0.58, Z-Axis: 0.75[0m
+[0;32mI (21514) MPU6050: Gyroscope:- X-Axis: 9.20, Y-Axis: 3.16, Z-Axis: -0.82[0m
+[0;32mI (21514) MPU6050: Temperature:- 30.84[0m
+Forward Tilt: 4
+[0;32mI (21624) MPU6050: Acceleration:-  X-Axis: 0.06, Y-Axis: -0.52, Z-Axis: 0.71[0m
+[0;32mI (21624) MPU6050: Gyroscope:- X-Axis: 4.68, Y-Axis: 5.62, Z-Axis: 0.46[0m
+[0;32mI (21624) MPU6050: Temperature:- 30.98[0m
+Forward Tilt: 4
+[0;32mI (21734) MPU6050: Acceleration:-  X-Axis: 0.07, Y-Axis: -0.55, Z-Axis: 0.71[0m
+[0;32mI (21734) MPU6050: Gyroscope:- X-Axis: -3.15, Y-Axis: 3.26, Z-Axis: -4.35[0m
+[0;32mI (21734) MPU6050: Temperature:- 30.88[0m
+Forward Tilt: 4
+[0;32mI (21844) MPU6050: Acceleration:-  X-Axis: 0.08, Y-Axis: -0.55, Z-Axis: 0.73[0m
+[0;32mI (21844) MPU6050: Gyroscope:- X-Axis: 3.50, Y-Axis: -0.79, Z-Axis: 2.16[0m
+[0;32mI (21844) MPU6050: Temperature:- 30.84[0m
+Forward Tilt: 4
+[0;32mI (21954) MPU6050: Acceleration:-  X-Axis: 0.06, Y-Axis: -0.57, Z-Axis: 0.72[0m
+[0;32mI (21954) MPU6050: Gyroscope:- X-Axis: -4.37, Y-Axis: 4.41, Z-Axis: -3.46[0m
+[0;32mI (21954) MPU6050: Temperature:- 30.79[0m
+Forward Tilt: 4
+[0;32mI (22064) MPU6050: Acceleration:-  X-Axis: 0.04, Y-Axis: -0.57, Z-Axis: 0.74[0m
+[0;32mI (22064) MPU6050: Gyroscope:- X-Axis: 0.50, Y-Axis: 3.56, Z-Axis: -4.00[0m
+[0;32mI (22064) MPU6050: Temperature:- 30.88[0m
+Forward Tilt: 4
+[0;32mI (22174) MPU6050: Acceleration:-  X-Axis: 0.06, Y-Axis: -0.56, Z-Axis: 0.74[0m
+[0;32mI (22174) MPU6050: Gyroscope:- X-Axis: 0.10, Y-Axis: 5.48, Z-Axis: -11.12[0m
+[0;32mI (22174) MPU6050: Temperature:- 30.84[0m
+Forward Tilt: 4
+[0;32mI (22284) MPU6050: Acceleration:-  X-Axis: 0.09, Y-Axis: -0.51, Z-Axis: 0.72[0m
+[0;32mI (22284) MPU6050: Gyroscope:- X-Axis: -4.10, Y-Axis: 0.92, Z-Axis: -2.95[0m
+[0;32mI (22284) MPU6050: Temperature:- 30.88[0m
+Forward Tilt: 4
+[0;32mI (22394) MPU6050: Acceleration:-  X-Axis: 0.08, Y-Axis: -0.63, Z-Axis: 0.69[0m
+[0;32mI (22394) MPU6050: Gyroscope:- X-Axis: 4.27, Y-Axis: 5.28, Z-Axis: 2.23[0m
+[0;32mI (22394) MPU6050: Temperature:- 30.79[0m
+Forward Tilt: 4
+[0;32mI (22504) MPU6050: Acceleration:-  X-Axis: 0.08, Y-Axis: -0.57, Z-Axis: 0.77[0m
+[0;32mI (22504) MPU6050: Gyroscope:- X-Axis: 3.52, Y-Axis: 2.66, Z-Axis: 2.36[0m
+[0;32mI (22504) MPU6050: Temperature:- 30.84[0m
+Forward Tilt: 4
+[0;32mI (22614) MPU6050: Acceleration:-  X-Axis: 0.03, Y-Axis: -0.56, Z-Axis: 0.76[0m
+[0;32mI (22614) MPU6050: Gyroscope:- X-Axis: 0.35, Y-Axis: 2.60, Z-Axis: 3.51[0m
+[0;32mI (22614) MPU6050: Temperature:- 30.88[0m
+Forward Tilt: 4
+[0;32mI (22724) MPU6050: Acceleration:-  X-Axis: 0.07, Y-Axis: -0.60, Z-Axis: 0.79[0m
+[0;32mI (22724) MPU6050: Gyroscope:- X-Axis: 7.51, Y-Axis: -2.00, Z-Axis: 9.86[0m
+[0;32mI (22724) MPU6050: Temperature:- 30.88[0m
+Forward Tilt: 4
+[0;32mI (22834) MPU6050: Acceleration:-  X-Axis: 0.02, Y-Axis: -0.53, Z-Axis: 0.74[0m
+[0;32mI (22834) MPU6050: Gyroscope:- X-Axis: 8.20, Y-Axis: 5.59, Z-Axis: 4.57[0m
+[0;32mI (22834) MPU6050: Temperature:- 30.93[0m
+Forward Tilt: 4
+[0;32mI (22944) MPU6050: Acceleration:-  X-Axis: -0.02, Y-Axis: -0.55, Z-Axis: 0.79[0m
+[0;32mI (22944) MPU6050: Gyroscope:- X-Axis: 3.51, Y-Axis: -2.70, Z-Axis: -1.85[0m
+[0;32mI (22944) MPU6050: Temperature:- 30.88[0m
+Forward Tilt: 4
+[0;32mI (23054) MPU6050: Acceleration:-  X-Axis: 0.00, Y-Axis: -0.51, Z-Axis: 0.74[0m
+[0;32mI (23054) MPU6050: Gyroscope:- X-Axis: 5.05, Y-Axis: -1.38, Z-Axis: 0.13[0m
+[0;32mI (23054) MPU6050: Temperature:- 30.98[0m
+No Tilt: 0
+[0;32mI (23154) MPU6050: Acceleration:-  X-Axis: 0.04, Y-Axis: -0.49, Z-Axis: 0.76[0m
+[0;32mI (23154) MPU6050: Gyroscope:- X-Axis: 0.13, Y-Axis: 0.02, Z-Axis: 1.08[0m
+[0;32mI (23154) MPU6050: Temperature:- 30.88[0m
+[0;32mI (23254) MPU6050: Acceleration:-  X-Axis: 0.04, Y-Axis: -0.52, Z-Axis: 0.79[0m
+[0;32mI (23254) MPU6050: Gyroscope:- X-Axis: -1.56, Y-Axis: -3.82, Z-Axis: 6.32[0m
+[0;32mI (23254) MPU6050: Temperature:- 30.88[0m
+Forward Tilt: 4
+[0;32mI (23364) MPU6050: Acceleration:-  X-Axis: 0.11, Y-Axis: -0.51, Z-Axis: 0.89[0m
+[0;32mI (23364) MPU6050: Gyroscope:- X-Axis: 13.14, Y-Axis: 1.00, Z-Axis: -9.43[0m
+[0;32mI (23364) MPU6050: Temperature:- 30.79[0m
+Forward Tilt: 4
+[0;32mI (23474) MPU6050: Acceleration:-  X-Axis: 0.10, Y-Axis: -0.38, Z-Axis: 0.99[0m
+[0;32mI (23474) MPU6050: Gyroscope:- X-Axis: 22.15, Y-Axis: 16.58, Z-Axis: -14.02[0m
+[0;32mI (23474) MPU6050: Temperature:- 30.84[0m
+[0;32mI (23574) MPU6050: Acceleration:-  X-Axis: 0.06, Y-Axis: -0.31, Z-Axis: 0.83[0m
+[0;32mI (23574) MPU6050: Gyroscope:- X-Axis: 64.99, Y-Axis: 0.14, Z-Axis: 0.57[0m
+[0;32mI (23574) MPU6050: Temperature:- 30.93[0m
+[0;32mI (23674) MPU6050: Acceleration:-  X-Axis: 0.12, Y-Axis: -0.38, Z-Axis: 1.15[0m
+[0;32mI (23674) MPU6050: Gyroscope:- X-Axis: -17.72, Y-Axis: 6.06, Z-Axis: 12.11[0m
+[0;32mI (23674) MPU6050: Temperature:- 30.84[0m
+[0;32mI (23774) MPU6050: Acceleration:-  X-Axis: -0.01, Y-Axis: -0.26, Z-Axis: 0.83[0m
+[0;32mI (23774) MPU6050: Gyroscope:- X-Axis: -18.50, Y-Axis: -13.39, Z-Axis: 26.56[0m
+[0;32mI (23774) MPU6050: Temperature:- 30.84[0m
+[0;32mI (23874) MPU6050: Acceleration:-  X-Axis: -0.06, Y-Axis: -0.25, Z-Axis: 0.80[0m
+[0;32mI (23874) MPU6050: Gyroscope:- X-Axis: 29.79, Y-Axis: 25.73, Z-Axis: -19.13[0m
+[0;32mI (23874) MPU6050: Temperature:- 30.88[0m
+[0;32mI (23974) MPU6050: Acceleration:-  X-Axis: 0.03, Y-Axis: -0.35, Z-Axis: 0.83[0m
+[0;32mI (23974) MPU6050: Gyroscope:- X-Axis: -7.82, Y-Axis: -3.56, Z-Axis: 9.82[0m
+[0;32mI (23974) MPU6050: Temperature:- 30.88[0m
+[0;32mI (24074) MPU6050: Acceleration:-  X-Axis: -0.03, Y-Axis: -0.35, Z-Axis: 0.80[0m
+[0;32mI (24074) MPU6050: Gyroscope:- X-Axis: -30.10, Y-Axis: 6.30, Z-Axis: 22.32[0m
+[0;32mI (24074) MPU6050: Temperature:- 30.79[0m
+[0;32mI (24174) MPU6050: Acceleration:-  X-Axis: -0.06, Y-Axis: -0.33, Z-Axis: 0.84[0m
+[0;32mI (24174) MPU6050: Gyroscope:- X-Axis: 14.27, Y-Axis: -8.59, Z-Axis: 9.60[0m
+[0;32mI (24174) MPU6050: Temperature:- 30.88[0m
+[0;32mI (24274) MPU6050: Acceleration:-  X-Axis: 0.03, Y-Axis: -0.43, Z-Axis: 0.88[0m
+[0;32mI (24274) MPU6050: Gyroscope:- X-Axis: -54.20, Y-Axis: -22.27, Z-Axis: -12.37[0m
+[0;32mI (24274) MPU6050: Temperature:- 30.98[0m
+[0;32mI (24374) MPU6050: Acceleration:-  X-Axis: 0.12, Y-Axis: -0.46, Z-Axis: 0.83[0m
+[0;32mI (24374) MPU6050: Gyroscope:- X-Axis: -81.97, Y-Axis: 27.90, Z-Axis: 9.02[0m
+[0;32mI (24374) MPU6050: Temperature:- 31.07[0m
+[0;32mI (24474) MPU6050: Acceleration:-  X-Axis: 0.09, Y-Axis: -0.53, Z-Axis: 0.73[0m
+[0;32mI (24474) MPU6050: Gyroscope:- X-Axis: -15.09, Y-Axis: -42.13, Z-Axis: 20.56[0m
+[0;32mI (24474) MPU6050: Temperature:- 30.98[0m
+Forward Tilt: 4
+[0;32mI (24584) MPU6050: Acceleration:-  X-Axis: 0.16, Y-Axis: -0.47, Z-Axis: 0.78[0m
+[0;32mI (24584) MPU6050: Gyroscope:- X-Axis: -41.84, Y-Axis: -97.21, Z-Axis: 20.79[0m
+[0;32mI (24584) MPU6050: Temperature:- 30.98[0m
+[0;32mI (24684) MPU6050: Acceleration:-  X-Axis: 0.07, Y-Axis: -0.64, Z-Axis: 0.68[0m
+[0;32mI (24684) MPU6050: Gyroscope:- X-Axis: -12.07, Y-Axis: 38.34, Z-Axis: 24.86[0m
+[0;32mI (24684) MPU6050: Temperature:- 30.98[0m
+Forward Tilt: 4
+[0;32mI (24794) MPU6050: Acceleration:-  X-Axis: 0.04, Y-Axis: -0.64, Z-Axis: 0.69[0m
+[0;32mI (24794) MPU6050: Gyroscope:- X-Axis: -3.16, Y-Axis: 55.69, Z-Axis: 2.48[0m
+[0;32mI (24794) MPU6050: Temperature:- 31.02[0m
+Forward Tilt: 4
+[0;32mI (24904) MPU6050: Acceleration:-  X-Axis: 0.02, Y-Axis: -0.67, Z-Axis: 0.65[0m
+[0;32mI (24904) MPU6050: Gyroscope:- X-Axis: -22.77, Y-Axis: -63.25, Z-Axis: 10.69[0m
+[0;32mI (24904) MPU6050: Temperature:- 31.12[0m
+Forward Tilt: 4
+[0;32mI (25014) MPU6050: Acceleration:-  X-Axis: 0.17, Y-Axis: -0.78, Z-Axis: 0.85[0m
+[0;32mI (25014) MPU6050: Gyroscope:- X-Axis: -69.29, Y-Axis: 71.98, Z-Axis: 17.84[0m
+[0;32mI (25014) MPU6050: Temperature:- 31.07[0m
+Forward Tilt: 4
+[0;32mI (25124) MPU6050: Acceleration:-  X-Axis: -0.06, Y-Axis: -0.75, Z-Axis: 0.55[0m
+[0;32mI (25124) MPU6050: Gyroscope:- X-Axis: -45.73, Y-Axis: 23.32, Z-Axis: 2.79[0m
+[0;32mI (25124) MPU6050: Temperature:- 31.07[0m
+Forward Tilt: 4
+[0;32mI (25234) MPU6050: Acceleration:-  X-Axis: -0.06, Y-Axis: -0.78, Z-Axis: 0.52[0m
+[0;32mI (25234) MPU6050: Gyroscope:- X-Axis: -24.31, Y-Axis: -5.17, Z-Axis: -0.25[0m
+[0;32mI (25234) MPU6050: Temperature:- 31.12[0m
+Forward Tilt: 4
+[0;32mI (25344) MPU6050: Acceleration:-  X-Axis: -0.03, Y-Axis: -0.81, Z-Axis: 0.44[0m
+[0;32mI (25344) MPU6050: Gyroscope:- X-Axis: -9.66, Y-Axis: -12.31, Z-Axis: 6.38[0m
+[0;32mI (25344) MPU6050: Temperature:- 31.21[0m
+Forward Tilt: 4
+[0;32mI (25454) MPU6050: Acceleration:-  X-Axis: 0.07, Y-Axis: -0.85, Z-Axis: 0.49[0m
+[0;32mI (25454) MPU6050: Gyroscope:- X-Axis: 1.55, Y-Axis: 31.94, Z-Axis: -1.81[0m
+[0;32mI (25454) MPU6050: Temperature:- 31.26[0m
+Forward Tilt: 4
+[0;32mI (25564) MPU6050: Acceleration:-  X-Axis: -0.06, Y-Axis: -0.79, Z-Axis: 0.41[0m
+[0;32mI (25564) MPU6050: Gyroscope:- X-Axis: -16.41, Y-Axis: -4.61, Z-Axis: 10.21[0m
+[0;32mI (25564) MPU6050: Temperature:- 31.26[0m
+Forward Tilt: 4
+[0;32mI (25674) MPU6050: Acceleration:-  X-Axis: -0.08, Y-Axis: -0.91, Z-Axis: 0.50[0m
+[0;32mI (25674) MPU6050: Gyroscope:- X-Axis: 2.77, Y-Axis: -27.65, Z-Axis: 5.60[0m
+[0;32mI (25674) MPU6050: Temperature:- 31.26[0m
+Forward Tilt: 4
+[0;32mI (25784) MPU6050: Acceleration:-  X-Axis: 0.14, Y-Axis: -0.69, Z-Axis: 0.25[0m
+[0;32mI (25784) MPU6050: Gyroscope:- X-Axis: 111.08, Y-Axis: -43.20, Z-Axis: -22.44[0m
+[0;32mI (25784) MPU6050: Temperature:- 31.31[0m
+Forward Tilt: 4
+[0;32mI (25894) MPU6050: Acceleration:-  X-Axis: -0.41, Y-Axis: -0.84, Z-Axis: 0.54[0m
+[0;32mI (25894) MPU6050: Gyroscope:- X-Axis: 123.30, Y-Axis: 136.85, Z-Axis: 126.47[0m
+[0;32mI (25894) MPU6050: Temperature:- 31.35[0m
+Forward Tilt: 4
+[0;32mI (26004) MPU6050: Acceleration:-  X-Axis: -0.25, Y-Axis: -0.23, Z-Axis: 0.61[0m
+[0;32mI (26004) MPU6050: Gyroscope:- X-Axis: 31.10, Y-Axis: 49.02, Z-Axis: 32.48[0m
+[0;32mI (26004) MPU6050: Temperature:- 31.35[0m
+[0;32mI (26104) MPU6050: Acceleration:-  X-Axis: -0.66, Y-Axis: 0.04, Z-Axis: 0.83[0m
+[0;32mI (26104) MPU6050: Gyroscope:- X-Axis: -168.33, Y-Axis: 144.70, Z-Axis: 66.35[0m
+[0;32mI (26104) MPU6050: Temperature:- 31.31[0m
+Device Right Tilt: 2
+[0;32mI (26214) MPU6050: Acceleration:-  X-Axis: -0.47, Y-Axis: -0.51, Z-Axis: 0.45[0m
+[0;32mI (26214) MPU6050: Gyroscope:- X-Axis: -1.42, Y-Axis: -48.20, Z-Axis: -0.33[0m
+[0;32mI (26214) MPU6050: Temperature:- 31.26[0m
+Forward Tilt: 4
+[0;32mI (26324) MPU6050: Acceleration:-  X-Axis: -0.69, Y-Axis: -0.37, Z-Axis: 0.62[0m
+[0;32mI (26324) MPU6050: Gyroscope:- X-Axis: 39.44, Y-Axis: -14.31, Z-Axis: -53.68[0m
+[0;32mI (26324) MPU6050: Temperature:- 31.35[0m
+Device Right Tilt: 2
+[0;32mI (26434) MPU6050: Acceleration:-  X-Axis: -0.53, Y-Axis: -0.39, Z-Axis: 0.66[0m
+[0;32mI (26434) MPU6050: Gyroscope:- X-Axis: 7.89, Y-Axis: -92.72, Z-Axis: -81.48[0m
+[0;32mI (26434) MPU6050: Temperature:- 31.35[0m
+Device Right Tilt: 2
+[0;32mI (26544) MPU6050: Acceleration:-  X-Axis: -0.24, Y-Axis: -0.43, Z-Axis: 0.53[0m
+[0;32mI (26544) MPU6050: Gyroscope:- X-Axis: -9.57, Y-Axis: -83.08, Z-Axis: -47.82[0m
+[0;32mI (26544) MPU6050: Temperature:- 31.35[0m
+[0;32mI (26644) MPU6050: Acceleration:-  X-Axis: 0.07, Y-Axis: -0.60, Z-Axis: 0.57[0m
+[0;32mI (26644) MPU6050: Gyroscope:- X-Axis: -20.05, Y-Axis: -152.54, Z-Axis: -70.27[0m
+[0;32mI (26644) MPU6050: Temperature:- 31.35[0m
+Forward Tilt: 4
+[0;32mI (26754) MPU6050: Acceleration:-  X-Axis: 0.29, Y-Axis: -0.59, Z-Axis: 0.64[0m
+[0;32mI (26754) MPU6050: Gyroscope:- X-Axis: 25.63, Y-Axis: -127.37, Z-Axis: -55.82[0m
+[0;32mI (26754) MPU6050: Temperature:- 31.35[0m
+Forward Tilt: 4
+[0;32mI (26864) MPU6050: Acceleration:-  X-Axis: 0.41, Y-Axis: -0.52, Z-Axis: 0.59[0m
+[0;32mI (26864) MPU6050: Gyroscope:- X-Axis: 24.66, Y-Axis: -116.76, Z-Axis: -12.62[0m
+[0;32mI (26864) MPU6050: Temperature:- 31.35[0m
+Forward Tilt: 4
+[0;32mI (26974) MPU6050: Acceleration:-  X-Axis: 0.61, Y-Axis: -0.27, Z-Axis: 0.65[0m
+[0;32mI (26974) MPU6050: Gyroscope:- X-Axis: 70.21, Y-Axis: -138.80, Z-Axis: -26.26[0m
+[0;32mI (26974) MPU6050: Temperature:- 31.35[0m
+Device Left Tilt: 1
+[0;32mI (27084) MPU6050: Acceleration:-  X-Axis: 0.88, Y-Axis: -0.29, Z-Axis: 0.53[0m
+[0;32mI (27084) MPU6050: Gyroscope:- X-Axis: 45.74, Y-Axis: -250.14, Z-Axis: -21.35[0m
+[0;32mI (27084) MPU6050: Temperature:- 31.31[0m
+Device Left Tilt: 1
+[0;32mI (27194) MPU6050: Acceleration:-  X-Axis: 0.98, Y-Axis: -0.27, Z-Axis: 0.38[0m
+[0;32mI (27194) MPU6050: Gyroscope:- X-Axis: 9.79, Y-Axis: -25.28, Z-Axis: -2.88[0m
+[0;32mI (27194) MPU6050: Temperature:- 31.31[0m
+Device Left Tilt: 1
+[0;32mI (27304) MPU6050: Acceleration:-  X-Axis: 0.93, Y-Axis: -0.23, Z-Axis: 0.28[0m
+[0;32mI (27304) MPU6050: Gyroscope:- X-Axis: 24.08, Y-Axis: -11.18, Z-Axis: -23.03[0m
+[0;32mI (27304) MPU6050: Temperature:- 31.35[0m
+Device Left Tilt: 1
+[0;32mI (27414) MPU6050: Acceleration:-  X-Axis: 0.77, Y-Axis: -0.21, Z-Axis: 0.20[0m
+[0;32mI (27414) MPU6050: Gyroscope:- X-Axis: 3.00, Y-Axis: -2.64, Z-Axis: -20.44[0m
+[0;32mI (27414) MPU6050: Temperature:- 31.40[0m
+Device Left Tilt: 1
+[0;32mI (27524) MPU6050: Acceleration:-  X-Axis: 0.90, Y-Axis: -0.18, Z-Axis: 0.34[0m
+[0;32mI (27524) MPU6050: Gyroscope:- X-Axis: -1.45, Y-Axis: -6.31, Z-Axis: -11.59[0m
+[0;32mI (27524) MPU6050: Temperature:- 31.35[0m
+Device Left Tilt: 1
+[0;32mI (27634) MPU6050: Acceleration:-  X-Axis: 0.80, Y-Axis: -0.09, Z-Axis: -0.01[0m
+[0;32mI (27634) MPU6050: Gyroscope:- X-Axis: -35.48, Y-Axis: -24.49, Z-Axis: 19.56[0m
+[0;32mI (27634) MPU6050: Temperature:- 31.35[0m
+Device Left Tilt: 1
+[0;32mI (27744) MPU6050: Acceleration:-  X-Axis: 0.90, Y-Axis: -0.12, Z-Axis: 0.08[0m
+[0;32mI (27744) MPU6050: Gyroscope:- X-Axis: 30.00, Y-Axis: -62.98, Z-Axis: 12.15[0m
+[0;32mI (27744) MPU6050: Temperature:- 31.26[0m
+Device Left Tilt: 1
+[0;32mI (27854) MPU6050: Acceleration:-  X-Axis: 0.87, Y-Axis: -0.06, Z-Axis: -0.06[0m
+[0;32mI (27854) MPU6050: Gyroscope:- X-Axis: 16.44, Y-Axis: -27.69, Z-Axis: 25.54[0m
+[0;32mI (27854) MPU6050: Temperature:- 31.35[0m
+Device Left Tilt: 1
+[0;32mI (27964) MPU6050: Acceleration:-  X-Axis: 0.98, Y-Axis: 0.04, Z-Axis: -0.24[0m
+[0;32mI (27964) MPU6050: Gyroscope:- X-Axis: 23.53, Y-Axis: -32.74, Z-Axis: -0.89[0m
+[0;32mI (27964) MPU6050: Temperature:- 31.26[0m
+Device Left Tilt: 1
+[0;32mI (28074) MPU6050: Acceleration:-  X-Axis: 0.71, Y-Axis: -0.05, Z-Axis: 0.17[0m
+[0;32mI (28074) MPU6050: Gyroscope:- X-Axis: -16.13, Y-Axis: 55.92, Z-Axis: -62.45[0m
+[0;32mI (28074) MPU6050: Temperature:- 31.40[0m
+Device Left Tilt: 1
+[0;32mI (28184) MPU6050: Acceleration:-  X-Axis: 1.02, Y-Axis: -0.01, Z-Axis: 0.25[0m
+[0;32mI (28184) MPU6050: Gyroscope:- X-Axis: -10.82, Y-Axis: -88.77, Z-Axis: 32.85[0m
+[0;32mI (28184) MPU6050: Temperature:- 31.31[0m
+Device Left Tilt: 1
+[0;32mI (28294) MPU6050: Acceleration:-  X-Axis: 0.88, Y-Axis: -0.07, Z-Axis: -0.11[0m
+[0;32mI (28294) MPU6050: Gyroscope:- X-Axis: -10.20, Y-Axis: 27.39, Z-Axis: -17.21[0m
+[0;32mI (28294) MPU6050: Temperature:- 31.26[0m
+Device Left Tilt: 1
+[0;32mI (28404) MPU6050: Acceleration:-  X-Axis: 1.26, Y-Axis: 0.01, Z-Axis: -0.16[0m
+[0;32mI (28404) MPU6050: Gyroscope:- X-Axis: 22.18, Y-Axis: -152.72, Z-Axis: 34.18[0m
+[0;32mI (28404) MPU6050: Temperature:- 31.26[0m
+Device Left Tilt: 1
+[0;32mI (28514) MPU6050: Acceleration:-  X-Axis: 0.88, Y-Axis: -0.03, Z-Axis: -0.11[0m
+[0;32mI (28514) MPU6050: Gyroscope:- X-Axis: -0.97, Y-Axis: 0.67, Z-Axis: -0.22[0m
+[0;32mI (28514) MPU6050: Temperature:- 31.35[0m
+Device Left Tilt: 1
+[0;32mI (28624) MPU6050: Acceleration:-  X-Axis: 1.01, Y-Axis: -0.00, Z-Axis: -0.06[0m
+[0;32mI (28624) MPU6050: Gyroscope:- X-Axis: -0.54, Y-Axis: 0.50, Z-Axis: 0.38[0m
+[0;32mI (28624) MPU6050: Temperature:- 31.40[0m
+Device Left Tilt: 1
+[0;32mI (28734) MPU6050: Acceleration:-  X-Axis: 1.00, Y-Axis: -0.00, Z-Axis: -0.06[0m
+[0;32mI (28734) MPU6050: Gyroscope:- X-Axis: -0.43, Y-Axis: 0.69, Z-Axis: 0.27[0m
+[0;32mI (28734) MPU6050: Temperature:- 31.31[0m
+Device Left Tilt: 1
+[0;32mI (28844) MPU6050: Acceleration:-  X-Axis: 1.01, Y-Axis: -0.00, Z-Axis: -0.06[0m
+[0;32mI (28844) MPU6050: Gyroscope:- X-Axis: -0.55, Y-Axis: 0.44, Z-Axis: 0.43[0m
+[0;32mI (28844) MPU6050: Temperature:- 31.26[0m
+Device Left Tilt: 1
+[0;32mI (28954) MPU6050: Acceleration:-  X-Axis: 1.02, Y-Axis: 0.00, Z-Axis: -0.07[0m
+[0;32mI (28954) MPU6050: Gyroscope:- X-Axis: -0.68, Y-Axis: 0.60, Z-Axis: 0.44[0m
+[0;32mI (28954) MPU6050: Temperature:- 31.21[0m
+Device Left Tilt: 1
+[0;32mI (29064) MPU6050: Acceleration:-  X-Axis: 1.01, Y-Axis: -0.01, Z-Axis: -0.07[0m
+[0;32mI (29064) MPU6050: Gyroscope:- X-Axis: -0.74, Y-Axis: 0.42, Z-Axis: 0.37[0m
+[0;32mI (29064) MPU6050: Temperature:- 31.35[0m
+Device Left Tilt: 1
+[0;32mI (29174) MPU6050: Acceleration:-  X-Axis: 1.01, Y-Axis: -0.01, Z-Axis: -0.07[0m
+[0;32mI (29174) MPU6050: Gyroscope:- X-Axis: -0.76, Y-Axis: 0.62, Z-Axis: 0.30[0m
+[0;32mI (29174) MPU6050: Temperature:- 31.17[0m
+Device Left Tilt: 1
+[0;32mI (29284) MPU6050: Acceleration:-  X-Axis: 1.01, Y-Axis: -0.01, Z-Axis: -0.05[0m
+[0;32mI (29284) MPU6050: Gyroscope:- X-Axis: -0.65, Y-Axis: 0.66, Z-Axis: 0.21[0m
+[0;32mI (29284) MPU6050: Temperature:- 31.35[0m
+Device Left Tilt: 1
+[0;32mI (29394) MPU6050: Acceleration:-  X-Axis: 1.01, Y-Axis: -0.00, Z-Axis: -0.07[0m
+[0;32mI (29394) MPU6050: Gyroscope:- X-Axis: -0.60, Y-Axis: 0.50, Z-Axis: 0.34[0m
+[0;32mI (29394) MPU6050: Temperature:- 31.31[0m
+Device Left Tilt: 1
+[0;32mI (29504) MPU6050: Acceleration:-  X-Axis: 1.01, Y-Axis: -0.00, Z-Axis: -0.06[0m
+[0;32mI (29504) MPU6050: Gyroscope:- X-Axis: -0.81, Y-Axis: 0.31, Z-Axis: 0.44[0m
+[0;32mI (29504) MPU6050: Temperature:- 31.31[0m
+Device Left Tilt: 1
+[0;32mI (29614) MPU6050: Acceleration:-  X-Axis: 1.01, Y-Axis: -0.00, Z-Axis: -0.06[0m
+[0;32mI (29614) MPU6050: Gyroscope:- X-Axis: -0.81, Y-Axis: 0.63, Z-Axis: 0.41[0m
+[0;32mI (29614) MPU6050: Temperature:- 31.31[0m
+Device Left Tilt: 1
+[0;32mI (29724) MPU6050: Acceleration:-  X-Axis: 1.00, Y-Axis: -0.01, Z-Axis: -0.06[0m
+[0;32mI (29724) MPU6050: Gyroscope:- X-Axis: -0.58, Y-Axis: 0.48, Z-Axis: 0.41[0m
+[0;32mI (29724) MPU6050: Temperature:- 31.31[0m
+Device Left Tilt: 1
+[0;32mI (29834) MPU6050: Acceleration:-  X-Axis: 1.02, Y-Axis: 0.00, Z-Axis: -0.07[0m
+[0;32mI (29834) MPU6050: Gyroscope:- X-Axis: -0.37, Y-Axis: 0.40, Z-Axis: 0.50[0m
+[0;32mI (29834) MPU6050: Temperature:- 31.40[0m
+Device Left Tilt: 1
+[0;32mI (29944) MPU6050: Acceleration:-  X-Axis: 1.00, Y-Axis: -0.00, Z-Axis: -0.06[0m
+[0;32mI (29944) MPU6050: Gyroscope:- X-Axis: -0.71, Y-Axis: 0.67, Z-Axis: 0.18[0m
+[0;32mI (29944) MPU6050: Temperature:- 31.40[0m
+Device Left Tilt: 1
+[0;32mI (30054) MPU6050: Acceleration:-  X-Axis: 1.01, Y-Axis: -0.00, Z-Axis: -0.07[0m
+[0;32mI (30054) MPU6050: Gyroscope:- X-Axis: -0.44, Y-Axis: 0.52, Z-Axis: 0.30[0m
+[0;32mI (30054) MPU6050: Temperature:- 31.26[0m
+Device Left Tilt: 1
+[0;32mI (30164) MPU6050: Acceleration:-  X-Axis: 1.01, Y-Axis: -0.01, Z-Axis: -0.06[0m
+[0;32mI (30164) MPU6050: Gyroscope:- X-Axis: -0.69, Y-Axis: 0.45, Z-Axis: 0.26[0m
+[0;32mI (30164) MPU6050: Temperature:- 31.35[0m
+Device Left Tilt: 1
+[0;32mI (30274) MPU6050: Acceleration:-  X-Axis: 1.01, Y-Axis: -0.01, Z-Axis: -0.07[0m
+[0;32mI (30274) MPU6050: Gyroscope:- X-Axis: -0.69, Y-Axis: 0.56, Z-Axis: 0.34[0m
+[0;32mI (30274) MPU6050: Temperature:- 31.35[0m
+Device Left Tilt: 1
+[0;32mI (30384) MPU6050: Acceleration:-  X-Axis: 1.01, Y-Axis: -0.00, Z-Axis: -0.07[0m
+[0;32mI (30384) MPU6050: Gyroscope:- X-Axis: -0.65, Y-Axis: 0.76, Z-Axis: 0.26[0m
+[0;32mI (30384) MPU6050: Temperature:- 31.26[0m
+Device Left Tilt: 1
+[0;32mI (30494) MPU6050: Acceleration:-  X-Axis: 1.01, Y-Axis: -0.00, Z-Axis: -0.07[0m
+[0;32mI (30494) MPU6050: Gyroscope:- X-Axis: -0.59, Y-Axis: 0.46, Z-Axis: 0.45[0m
+[0;32mI (30494) MPU6050: Temperature:- 31.31[0m
+Device Left Tilt: 1
+[0;32mI (30604) MPU6050: Acceleration:-  X-Axis: 1.00, Y-Axis: 0.00, Z-Axis: -0.07[0m
+[0;32mI (30604) MPU6050: Gyroscope:- X-Axis: -0.76, Y-Axis: 0.56, Z-Axis: 0.34[0m
+[0;32mI (30604) MPU6050: Temperature:- 31.31[0m
+Device Left Tilt: 1
+[0;32mI (30714) MPU6050: Acceleration:-  X-Axis: 1.01, Y-Axis: -0.00, Z-Axis: -0.07[0m
+[0;32mI (30714) MPU6050: Gyroscope:- X-Axis: -0.77, Y-Axis: 0.45, Z-Axis: 0.25[0m
+[0;32mI (30714) MPU6050: Temperature:- 31.31[0m
+Device Left Tilt: 1
+[0;32mI (30824) MPU6050: Acceleration:-  X-Axis: 1.01, Y-Axis: -0.00, Z-Axis: -0.06[0m
+[0;32mI (30824) MPU6050: Gyroscope:- X-Axis: -0.67, Y-Axis: 0.68, Z-Axis: 0.32[0m
+[0;32mI (30824) MPU6050: Temperature:- 31.26[0m
+Device Left Tilt: 1
+[0;32mI (30934) MPU6050: Acceleration:-  X-Axis: 1.01, Y-Axis: -0.01, Z-Axis: -0.06[0m
+[0;32mI (30934) MPU6050: Gyroscope:- X-Axis: -0.62, Y-Axis: 0.44, Z-Axis: 0.25[0m
+[0;32mI (30934) MPU6050: Temperature:- 31.31[0m
+Device Left Tilt: 1
+[0;32mI (31044) MPU6050: Acceleration:-  X-Axis: 1.01, Y-Axis: -0.00, Z-Axis: -0.06[0m
+[0;32mI (31044) MPU6050: Gyroscope:- X-Axis: -0.40, Y-Axis: 0.64, Z-Axis: 0.46[0m
+[0;32mI (31044) MPU6050: Temperature:- 31.26[0m
+Device Left Tilt: 1
+[0;32mI (31154) MPU6050: Acceleration:-  X-Axis: 1.01, Y-Axis: -0.00, Z-Axis: -0.07[0m
+[0;32mI (31154) MPU6050: Gyroscope:- X-Axis: -0.88, Y-Axis: 0.74, Z-Axis: 0.18[0m
+[0;32mI (31154) MPU6050: Temperature:- 31.17[0m
+Device Left Tilt: 1
+[0;32mI (31264) MPU6050: Acceleration:-  X-Axis: 1.01, Y-Axis: -0.00, Z-Axis: -0.07[0m
+[0;32mI (31264) MPU6050: Gyroscope:- X-Axis: -0.63, Y-Axis: 0.56, Z-Axis: 0.33[0m
+[0;32mI (31264) MPU6050: Temperature:- 31.21[0m
+Device Left Tilt: 1
+[0;32mI (31374) MPU6050: Acceleration:-  X-Axis: 1.01, Y-Axis: 0.00, Z-Axis: -0.07[0m
+[0;32mI (31374) MPU6050: Gyroscope:- X-Axis: -0.71, Y-Axis: 0.54, Z-Axis: 0.34[0m
+[0;32mI (31374) MPU6050: Temperature:- 31.21[0m
+Device Left Tilt: 1
+[0;32mI (31484) MPU6050: Acceleration:-  X-Axis: 1.01, Y-Axis: -0.01, Z-Axis: -0.06[0m
+[0;32mI (31484) MPU6050: Gyroscope:- X-Axis: -0.79, Y-Axis: 0.62, Z-Axis: 0.38[0m
+[0;32mI (31484) MPU6050: Temperature:- 31.26[0m
+Device Left Tilt: 1
+[0;32mI (31594) MPU6050: Acceleration:-  X-Axis: 1.02, Y-Axis: -0.01, Z-Axis: -0.08[0m
+[0;32mI (31594) MPU6050: Gyroscope:- X-Axis: -0.47, Y-Axis: 0.53, Z-Axis: 0.34[0m
+[0;32mI (31594) MPU6050: Temperature:- 31.26[0m
+Device Left Tilt: 1
+[0;32mI (31704) MPU6050: Acceleration:-  X-Axis: 1.00, Y-Axis: -0.00, Z-Axis: -0.07[0m
+[0;32mI (31704) MPU6050: Gyroscope:- X-Axis: -0.69, Y-Axis: 0.56, Z-Axis: 0.39[0m
+[0;32mI (31704) MPU6050: Temperature:- 31.26[0m
+Device Left Tilt: 1
+[0;32mI (31814) MPU6050: Acceleration:-  X-Axis: 1.01, Y-Axis: -0.01, Z-Axis: -0.07[0m
+[0;32mI (31814) MPU6050: Gyroscope:- X-Axis: -0.69, Y-Axis: 0.61, Z-Axis: 0.54[0m
+[0;32mI (31814) MPU6050: Temperature:- 31.12[0m
+Device Left Tilt: 1
+[0;32mI (31924) MPU6050: Acceleration:-  X-Axis: 1.00, Y-Axis: -0.00, Z-Axis: -0.06[0m
+[0;32mI (31924) MPU6050: Gyroscope:- X-Axis: -0.76, Y-Axis: 0.44, Z-Axis: 0.34[0m
+[0;32mI (31924) MPU6050: Temperature:- 31.26[0m
+Device Left Tilt: 1
+[0;32mI (32034) MPU6050: Acceleration:-  X-Axis: 1.00, Y-Axis: -0.01, Z-Axis: -0.06[0m
+[0;32mI (32034) MPU6050: Gyroscope:- X-Axis: -0.59, Y-Axis: 1.17, Z-Axis: 0.15[0m
+[0;32mI (32034) MPU6050: Temperature:- 31.17[0m
+Device Left Tilt: 1

@@ -1,0 +1,2 @@
+source C:/Espressif/projects_esp_fayyaz/scarlet_car_rx/build/bootloader/gdbinit/symbols
+source C:/Espressif/projects_esp_fayyaz/scarlet_car_rx/build/bootloader/gdbinit/connect

@@ -1,0 +1,71 @@
+[1/5] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Espressif\projects_esp_fayyaz\scarlet_car_rx\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.4_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.4.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Espressif/projects_esp_fayyaz/scarlet_car_rx/build/partition_table/partition-table.bin C:/Espressif/projects_esp_fayyaz/scarlet_car_rx/build/scarlet_car_rx.bin"
+scarlet_car_rx.bin binary size 0xb6bb0 bytes. Smallest app partition is 0x100000 bytes. 0x49450 bytes (29%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Espressif\projects_esp_fayyaz\scarlet_car_rx\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.4_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.4.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/Espressif/projects_esp_fayyaz/scarlet_car_rx/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6580 bytes. 0xa80 bytes (9%) free.
+[3/5] No install step for 'bootloader'
+[4/5] Completed 'bootloader'
+[4/5] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.4.1\components\esptool_py && C:\Espressif\tools\cmake\3.30.2\bin\cmake.exe -D IDF_PATH=C:/Espressif/frameworks/esp-idf-v5.4.1 -D SERIAL_TOOL=C:/Espressif/python_env/idf5.4_py3.11_env/Scripts/python.exe;;C:/Espressif/frameworks/esp-idf-v5.4.1/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=C:/Espressif/projects_esp_fayyaz/scarlet_car_rx/build -P C:/Espressif/frameworks/esp-idf-v5.4.1/components/esptool_py/run_serial_tool.cmake"
+esptool.py --chip esp32 -p com7 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 scarlet_car_rx.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.1
+Serial port com7
+Connecting...
+Failed to get PID of a device on com7, using standard reset sequence.
+.......
+Chip is ESP32-D0WDQ6 (revision v1.0)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 4c:eb:d6:7b:28:5c
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000c6fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 25984 bytes to 16377...
+Writing at 0x00001000... (100 %)
+Wrote 25984 bytes (16377 compressed) at 0x00001000 in 0.4 seconds (effective 465.8 kbit/s)...
+Hash of data verified.
+Compressed 748464 bytes to 470664...
+Writing at 0x00010000... (3 %)
+Writing at 0x0001c98c... (6 %)
+Writing at 0x00025339... (10 %)
+Writing at 0x0002f995... (13 %)
+Writing at 0x0003529c... (17 %)
+Writing at 0x0003b520... (20 %)
+Writing at 0x000413e8... (24 %)
+Writing at 0x00047379... (27 %)
+Writing at 0x0004cf75... (31 %)
+Writing at 0x00053259... (34 %)
+Writing at 0x00058ab6... (37 %)
+Writing at 0x0005de1a... (41 %)
+Writing at 0x00062f81... (44 %)
+Writing at 0x000681ee... (48 %)
+Writing at 0x0006d668... (51 %)
+Writing at 0x0007313b... (55 %)
+Writing at 0x00078d92... (58 %)
+Writing at 0x0007e7f1... (62 %)
+Writing at 0x00084582... (65 %)
+Writing at 0x00089f16... (68 %)
+Writing at 0x0008faaa... (72 %)
+Writing at 0x00095722... (75 %)
+Writing at 0x0009af9d... (79 %)
+Writing at 0x000a3611... (82 %)
+Writing at 0x000abb16... (86 %)
+Writing at 0x000b17d6... (89 %)
+Writing at 0x000b7265... (93 %)
+Writing at 0x000bd573... (96 %)
+Writing at 0x000c2a3a... (100 %)
+Wrote 748464 bytes (470664 compressed) at 0x00010000 in 10.9 seconds (effective 549.5 kbit/s)...
+File  md5: d2233dfc60477550ee50c4155d716ee4
+Flash md5: 19b1342e702027eafdc3a8b9cd2c953c
+MD5 of 0xFF is 505fe393735b56cb8caf0a6742e7c473
+
+A fatal error occurred: MD5 of file does not match data in flash!
+FAILED: CMakeFiles/flash C:/Espressif/projects_esp_fayyaz/scarlet_car_rx/build/CMakeFiles/flash 
+C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.4.1\components\esptool_py && C:\Espressif\tools\cmake\3.30.2\bin\cmake.exe -D IDF_PATH=C:/Espressif/frameworks/esp-idf-v5.4.1 -D SERIAL_TOOL=C:/Espressif/python_env/idf5.4_py3.11_env/Scripts/python.exe;;C:/Espressif/frameworks/esp-idf-v5.4.1/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=C:/Espressif/projects_esp_fayyaz/scarlet_car_rx/build -P C:/Espressif/frameworks/esp-idf-v5.4.1/components/esptool_py/run_serial_tool.cmake"
+ninja: build stopped: subcommand failed.
