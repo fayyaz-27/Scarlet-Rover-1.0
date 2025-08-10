@@ -1,3 +1,5 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 # Scarlet Rover
 
 **Gesture-Controlled ESP32 Rover with Collision Detection and Prevention**  
